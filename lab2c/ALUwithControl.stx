@@ -1,0 +1,35 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to D:/CECS341/lab2c/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to D:/CECS341/lab2c/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "LEGv8.v" in library work
+Compiling verilog file "ALUControl.v" in library work
+Module <LEGv8> compiled
+Compiling verilog file "ALUwithControl.v" in library work
+Module <ALUControl> compiled
+ERROR:HDLCompilers:26 - "ALUwithControl.v" line 28 unexpected token: 'wire'
+Module <ALUwithControl> compiled
+Analysis of file <"ALUwithControl.prj"> failed.
+--> 
+
+Total memory usage is 265680 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

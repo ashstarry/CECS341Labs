@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="lab2b.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="ALUControl.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="ALUControl.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="ALUControl.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="ALUControl.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="ALUControl.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="ALUControl.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="ALUControl.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUControl.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALUControl.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="ALUControl.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="ALUControl.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALUControl_envsettings.html"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALUControl_isim_beh.exe"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALUControl_isim_map.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ALUControl_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="ALUControl_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="ALUControl_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="ALUControl_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALUControl_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALUControl_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUControl_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="ALUControl_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="ALUControl_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="ALUControl_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="ALUControl_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUControltest_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALUControltest_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALUControltest_isim_beh.wdb"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALUControltest_isim_map.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="ALUControltest_isim_map.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUControltest_map.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUControltest_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALUControltest_stx_map.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostMapSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostMapSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/map/ALUControl_map.nlf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/map/ALUControl_map.v"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/map/alucontrol_map.sdf"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostMapSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1485378312" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1485378312">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485808475" xil_pn:in_ck="6333253016625737262" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1485808475">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALUControl.v"/>
+      <outfile xil_pn:name="ALUControltest.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1485808141" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1706043807231115398" xil_pn:start_ts="1485808141">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485808141" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-3979726013011041732" xil_pn:start_ts="1485808141">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485457461" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="4486380032268823939" xil_pn:start_ts="1485457461">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485808489" xil_pn:in_ck="6333253016625737262" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1485808489">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALUControl.v"/>
+      <outfile xil_pn:name="ALUControltest.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1485808491" xil_pn:in_ck="6333253016625737262" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-568063411098530091" xil_pn:start_ts="1485808489">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ALUControltest_beh.prj"/>
+      <outfile xil_pn:name="ALUControltest_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1485888533" xil_pn:in_ck="4860662189779355780" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="1080134347748841976" xil_pn:start_ts="1485888532">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="ALUControltest_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1485384234" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1485384234">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485384234" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4963840802213473244" xil_pn:start_ts="1485384234">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485384234" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4486380032268823939" xil_pn:start_ts="1485384234">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485384234" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1485384234">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485384234" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-5686047451474396134" xil_pn:start_ts="1485384234">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485384234" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1485384234">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485384234" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-724661125667916531" xil_pn:start_ts="1485384234">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485385438" xil_pn:in_ck="3405681009211585255" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="5673362194553598646" xil_pn:start_ts="1485385430">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ALUControl.lso"/>
+      <outfile xil_pn:name="ALUControl.ngc"/>
+      <outfile xil_pn:name="ALUControl.ngr"/>
+      <outfile xil_pn:name="ALUControl.prj"/>
+      <outfile xil_pn:name="ALUControl.stx"/>
+      <outfile xil_pn:name="ALUControl.syr"/>
+      <outfile xil_pn:name="ALUControl.xst"/>
+      <outfile xil_pn:name="ALUControl_stx_beh.prj"/>
+      <outfile xil_pn:name="ALUControl_xst.xrpt"/>
+      <outfile xil_pn:name="ALUControltest_map.prj"/>
+      <outfile xil_pn:name="ALUControltest_stx_map.prj"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1485384250" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8765572859877126597" xil_pn:start_ts="1485384250">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1485385442" xil_pn:in_ck="991060215796462665" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4335536973668365626" xil_pn:start_ts="1485385438">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="ALUControl.bld"/>
+      <outfile xil_pn:name="ALUControl.ngd"/>
+      <outfile xil_pn:name="ALUControl_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1485385446" xil_pn:in_ck="991060215796462666" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1309755933173654900" xil_pn:start_ts="1485385442">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="ALUControl.pcf"/>
+      <outfile xil_pn:name="ALUControl_map.map"/>
+      <outfile xil_pn:name="ALUControl_map.mrp"/>
+      <outfile xil_pn:name="ALUControl_map.ncd"/>
+      <outfile xil_pn:name="ALUControl_map.ngm"/>
+      <outfile xil_pn:name="ALUControl_map.xrpt"/>
+      <outfile xil_pn:name="ALUControl_summary.xml"/>
+      <outfile xil_pn:name="ALUControl_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1485385449" xil_pn:in_ck="3270267313223096419" xil_pn:name="TRAN_postMapSimModel" xil_pn:prop_ck="-2013211124295944376" xil_pn:start_ts="1485385446">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/map/ALUControl_map.nlf"/>
+      <outfile xil_pn:name="netgen/map/ALUControl_map.v"/>
+      <outfile xil_pn:name="netgen/map/alucontrol_map.sdf"/>
+    </transform>
+    <transform xil_pn:end_ts="1485385449" xil_pn:in_ck="8292676533016966320" xil_pn:name="TRAN_copyPost-MapAbstractToPreSimulation" xil_pn:start_ts="1485385449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ALUControltest.v"/>
+      <outfile xil_pn:name="netgen/map/ALUControl_map.v"/>
+      <outfile xil_pn:name="netgen/map/alucontrol_map.sdf"/>
+    </transform>
+    <transform xil_pn:end_ts="1485385451" xil_pn:in_ck="1604692082829984680" xil_pn:name="TRAN_ISimulatePostMapModelRunFuse" xil_pn:prop_ck="6178940486131230421" xil_pn:start_ts="1485385449">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ALUControltest_isim_map.exe"/>
+      <outfile xil_pn:name="ALUControltest_map.prj"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1485385452" xil_pn:in_ck="-5875667032973811006" xil_pn:name="TRAN_ISimulatePostMapModel" xil_pn:prop_ck="-654190717080083961" xil_pn:start_ts="1485385451">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ALUControltest_isim_map.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+  </transforms>
+
+</generated_project>

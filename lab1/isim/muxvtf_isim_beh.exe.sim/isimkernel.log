@@ -1,0 +1,29 @@
+Command line:
+   muxvtf_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55457
+
+Tue Jan 24 11:39:50 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 842.002 Meg
+
+ Total Signals          : 19
+ Total Nets             : 20
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 107
+Total Line Count : 36
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 1156.58 Meg
+
+Tue Jan 24 11:40:48 2017
+

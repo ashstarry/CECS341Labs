@@ -1,0 +1,5 @@
+set -tmpdir "D:/CECS341/lab3b/xst/projnav.tmp"
+set -xsthdpdir "D:/CECS341/lab3b/xst"
+elaborate
+-ifn RF.prj
+-ifmt mixed

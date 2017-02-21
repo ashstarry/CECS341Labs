@@ -1,0 +1,16 @@
+xst -intstyle ise -ifn "D:/CECS341/lab2b/ALUControl.xst" -ofn "D:/CECS341/lab2b/ALUControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 ALUControl.ngc ALUControl.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ALUControl_map.ncd ALUControl.ngd ALUControl.pcf 
+netgen -intstyle ise -s 5  -pcf ALUControl.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim ALUControl_map.ncd ALUControl_map.v 
+xst -intstyle ise -ifn "D:/CECS341/lab2b/ALUControl.xst" -ofn "D:/CECS341/lab2b/ALUControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 ALUControl.ngc ALUControl.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ALUControl_map.ncd ALUControl.ngd ALUControl.pcf 
+netgen -intstyle ise -s 5  -pcf ALUControl.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim ALUControl_map.ncd ALUControl_map.v 
+xst -intstyle ise -ifn "D:/CECS341/lab2b/ALUControl.xst" -ofn "D:/CECS341/lab2b/ALUControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 ALUControl.ngc ALUControl.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ALUControl_map.ncd ALUControl.ngd ALUControl.pcf 
+netgen -intstyle ise -s 5  -pcf ALUControl.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim ALUControl_map.ncd ALUControl_map.v 
+xst -intstyle ise -ifn "D:/CECS341/lab2b/ALUControl.xst" -ofn "D:/CECS341/lab2b/ALUControl.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 ALUControl.ngc ALUControl.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o ALUControl_map.ncd ALUControl.ngd ALUControl.pcf 
+netgen -intstyle ise -s 5  -pcf ALUControl.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim ALUControl_map.ncd ALUControl_map.v 

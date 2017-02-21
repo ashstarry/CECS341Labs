@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/CECS341/lab2b/ALUControltest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="ALUControltest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="3" />
+   <wvobject fp_name="/ALUControltest/ALUOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALUControltest/OpCodefield" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OpCodefield[10:0]</obj_property>
+      <obj_property name="ObjectShortName">OpCodefield[10:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ALUControltest/ALUoperation" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUoperation[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUoperation[3:0]</obj_property>
+   </wvobject>
+</wave_config>

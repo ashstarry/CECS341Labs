@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/CECS341/lab3b/RFALUtest_isim_beh.exe" -prj "D:/CECS341/lab3b/RFALUtest_beh.prj" "work.RFALUtest" "work.glbl" 

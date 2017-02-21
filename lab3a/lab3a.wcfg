@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="D:/CECS341/lab3a/registerfiletest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="registerfiletest" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/registerfiletest/WriteReg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteReg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteReg[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/registerfiletest/WriteData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/registerfiletest/RegWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/registerfiletest/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/registerfiletest/Read1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Read1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Read1[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/registerfiletest/Read2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Read2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Read2[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/registerfiletest/Data1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data1[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Data1[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/registerfiletest/Data2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Data2[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Data2[63:0]</obj_property>
+   </wvobject>
+</wave_config>

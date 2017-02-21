@@ -1,0 +1,29 @@
+Command line:
+   LEGv8_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59291
+
+Wed Jan 25 11:33:36 2017
+
+
+ Elaboration Time: 0.140625 sec
+
+ Current Memory Usage: 842.51 Meg
+
+ Total Signals          : 17
+ Total Nets             : 210
+ Total Signal Drivers   : 7
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 9
+ Total Traceable Variables  : 19
+ Total Scalar Nets and Variables : 354
+Total Line Count : 23
+
+ Total Simulation Time: 0.140625 sec
+
+ Current Memory Usage: 842.51 Meg
+
+Wed Jan 25 11:33:51 2017
+

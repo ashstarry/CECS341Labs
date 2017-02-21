@@ -1,0 +1,29 @@
+Command line:
+   RFALU_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55251
+
+Tue Feb 07 19:27:41 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 846.578 Meg
+
+ Total Signals          : 47
+ Total Nets             : 307
+ Total Signal Drivers   : 10
+ Total Blocks           : 6
+ Total Primitive Blocks : 4
+ Total Processes        : 14
+ Total Traceable Variables  : 21
+ Total Scalar Nets and Variables : 2503
+Total Line Count : 36
+
+ Total Simulation Time: 0.03125 sec
+
+ Current Memory Usage: 689.291 Meg
+
+Tue Feb 07 19:29:17 2017
+

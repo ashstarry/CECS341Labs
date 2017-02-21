@@ -1,0 +1,2 @@
+verilog isim_temp "netgen/map/ALUControl_map.v"
+verilog isim_temp "ALUControltest.v"

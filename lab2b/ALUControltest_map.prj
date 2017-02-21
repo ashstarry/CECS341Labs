@@ -1,0 +1,2 @@
+verilog work "netgen/map/ALUControl_map.v"
+verilog work "ALUControltest.v"

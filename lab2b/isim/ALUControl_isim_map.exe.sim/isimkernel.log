@@ -1,0 +1,29 @@
+Command line:
+   ALUControl_isim_map.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  59938
+
+Wed Jan 25 14:58:35 2017
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 841.99 Meg
+
+ Total Signals          : 391
+ Total Nets             : 177
+ Total Signal Drivers   : 160
+ Total Blocks           : 107
+ Total Primitive Blocks : 85
+ Total Processes        : 174
+ Total Traceable Variables  : 214
+ Total Scalar Nets and Variables : 6833
+Total Line Count : 356
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 1156.56 Meg
+
+Wed Jan 25 14:59:18 2017
+
