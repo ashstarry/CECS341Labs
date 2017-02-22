@@ -1,0 +1,10 @@
+Command line:
+   RFALUtest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53211
+
+Tue Feb 21 10:51:54 2017
+
+
+ Elaboration Time: 0.125 sec

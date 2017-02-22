@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/jvarg/Documents/CECS341Labs/Lab3_C_combined/RFALUtest_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="RFALUtest" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/RFALUtest/WriteReg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteReg[5:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteReg[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/WriteData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/RegWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/Read1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Read1[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Read1[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/Read2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Read2[5:0]</obj_property>
+      <obj_property name="ObjectShortName">Read2[5:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/uut/Lab2c/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[63:0]</obj_property>
+      <obj_property name="ObjectShortName">A[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/uut/Lab2c/B" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">B[63:0]</obj_property>
+      <obj_property name="ObjectShortName">B[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/ALUOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/OpCodefield" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OpCodefield[10:0]</obj_property>
+      <obj_property name="ObjectShortName">OpCodefield[10:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/uut/Lab2c/ALUoperation" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUoperation[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUoperation[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/ALUresult" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUresult[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUresult[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUtest/Zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+</wave_config>
