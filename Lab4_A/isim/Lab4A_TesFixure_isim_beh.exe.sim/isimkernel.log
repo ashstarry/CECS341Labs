@@ -1,0 +1,29 @@
+Command line:
+   Lab4A_TesFixure_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53556
+
+Wed Feb 22 12:58:53 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 383.828 Meg
+
+ Total Signals          : 19
+ Total Nets             : 152
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 17
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 2419
+Total Line Count : 66
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 855.699 Meg
+
+Wed Feb 22 13:56:30 2017
+

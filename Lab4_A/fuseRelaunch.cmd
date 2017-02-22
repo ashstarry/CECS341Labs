@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/jvarg/Documents/CECS341Labs/Lab4_A/Lab4A_TesFixure_isim_beh.exe" -prj "C:/Users/jvarg/Documents/CECS341Labs/Lab4_A/Lab4A_TesFixure_beh.prj" "work.Lab4A_TesFixure" "work.glbl" 

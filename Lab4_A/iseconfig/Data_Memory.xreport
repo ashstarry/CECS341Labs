@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-21T21:00:07</DateModified>
+  <DateModified>2017-02-22T15:17:53</DateModified>
   <ModuleName>Data_Memory</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/jvarg/Documents/CECS341Labs/Lab4_A/iseconfig/Data_Memory.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/jvarg/Documents/CECS341Labs/Lab4_A</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/jvarg/Documents/CECS341Labs/Lab4_A\</ImplementationReportsDirectory>
   <DateInitialized>2017-02-21T21:00:07</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
