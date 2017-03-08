@@ -22,7 +22,7 @@ module Data_Memory(clock, MemWrite, MemRead, Address, WriteData, ReadData   );
 
 	input  clock;
 	input  MemWrite;
-	input [7:0]  Address;
+	input [63:0]  Address;
 	input [63:0] WriteData;
 	input  MemRead;
 	output reg [63:0] ReadData;
@@ -44,7 +44,7 @@ module Data_Memory(clock, MemWrite, MemRead, Address, WriteData, ReadData   );
 	DM[Address  +1] = WriteData [55:48];
 	DM[Address  +2] = WriteData [47:40];
 	DM[Address  +3] = WriteData [39:32];
-	DM[Address  +4] = WriteData [31:24];
+	DM[Address + 4] = WriteData [31:24];
 	DM[Address  +5] = WriteData [23:16];
 	DM[Address  +6] = WriteData [15:8];
 	DM[Address  +7] = WriteData [7:0];
