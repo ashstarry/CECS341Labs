@@ -5,5 +5,17 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" Line 83: &lt;<arg fmt="%s" index="1">DispIn</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" Line 85: &lt;<arg fmt="%s" index="1">DispIn</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="69" delta="unknown" >"C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" Line 87: &lt;<arg fmt="%s" index="1">MemtoReg_Select</arg>&gt; is not declared.
+</msg>
+
+<msg type="error" file="HDLCompiler" num="598" delta="unknown" >"C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" Line 25: Module &lt;<arg fmt="%s" index="1">RFALUDM_TestFixure</arg>&gt; ignored due to previous errors.
+</msg>
+
 </messages>
 

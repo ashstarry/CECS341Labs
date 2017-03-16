@@ -24,5 +24,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 Verilog Units
 Built simulation executable C:/Users/jvarg/Documents/CECS341Labs/Lab3_C_combined/RFALUtest_isim_beh.exe
-Fuse Memory Usage: 28360 KB
-Fuse CPU Usage: 1233 ms
+Fuse Memory Usage: 28548 KB
+Fuse CPU Usage: 905 ms

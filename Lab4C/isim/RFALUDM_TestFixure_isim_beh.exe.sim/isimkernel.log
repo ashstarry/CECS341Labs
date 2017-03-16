@@ -1,0 +1,10 @@
+Command line:
+   RFALUDM_TestFixure_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50328
+
+Wed Mar 15 22:05:24 2017
+
+
+ Elaboration Time: 0.03125 sec

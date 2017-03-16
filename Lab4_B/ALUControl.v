@@ -29,10 +29,15 @@ module ALUControl(
 			13'b1010101010000: ALUoperation <= 1;
 			13'b1010001010000: ALUoperation <= 0;
 			13'b1010001011000: ALUoperation <= 2;
-			13'b1011001011000: ALUoperation <= 6;
+			13'b1011001011000: ALUoperation <= 6;   
 			13'b1011111000010: ALUoperation <= 7;
 			13'b1011101010000: ALUoperation <= 12;
 			default: ALUoperation <= 15;
 		endcase
-
+	
+	always @(ALUOp)
+		case(ALUOp)
+		2'b11: ALUoperation<= 2;
+	endcase	
+	
 endmodule

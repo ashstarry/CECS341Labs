@@ -11,9 +11,6 @@
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/ALUControl.v&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/ALUwithControl.v&quot; into library work</arg>
-</msg>
-
 <msg type="info" file="ProjectMgmt" num="1845" ><arg fmt="%s" index="1">Analyzing Verilog file &quot;C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/Data_Memory.v&quot; into library work</arg>
 </msg>
 

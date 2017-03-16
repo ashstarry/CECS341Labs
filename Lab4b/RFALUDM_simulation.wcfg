@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/jvarg/Documents/CECS341Labs/Lab4b/RFALUDM_TestFixure_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="RFALUDM_TestFixure" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="23" />
+   <wvobject fp_name="/RFALUDM_TestFixure/ALUSrc_Select" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUSrc_Select</obj_property>
+      <obj_property name="ObjectShortName">ALUSrc_Select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/MemRead" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/RegWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RegWrite</obj_property>
+      <obj_property name="ObjectShortName">RegWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/uut/RFALU/ALUSrc/DispIn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DispIn[63:0]</obj_property>
+      <obj_property name="ObjectShortName">DispIn[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/uut/RFALU/A" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">A[63:0]</obj_property>
+      <obj_property name="ObjectShortName">A[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/uut/RFALU/ALUSrc/SrcOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SrcOut[63:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcOut[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/uut/SE/SEout" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">SEout[63:0]</obj_property>
+      <obj_property name="ObjectShortName">SEout[63:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/ALUOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[1:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/OpCodefield" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">OpCodefield[10:0]</obj_property>
+      <obj_property name="ObjectShortName">OpCodefield[10:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/uut/RFALU/ALUoperation" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUoperation[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUoperation[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/uut/RFALU/ALUresult" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUresult[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUresult[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/Zero" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/DM_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DM_clock</obj_property>
+      <obj_property name="ObjectShortName">DM_clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/MemWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/WriteData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[63:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/uut/DM/ReadData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/Read1" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Read1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Read1[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/Read2" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Read2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">Read2[4:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/DispIn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DispIn[8:0]</obj_property>
+      <obj_property name="ObjectShortName">DispIn[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/uut/ToRegOut" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ToRegOut[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ToRegOut[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/WriteReg" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteReg[4:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteReg[4:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/MemtoReg_Select" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemtoReg_Select</obj_property>
+      <obj_property name="ObjectShortName">MemtoReg_Select</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RFALUDM_TestFixure/RF_clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">RF_clock</obj_property>
+      <obj_property name="ObjectShortName">RF_clock</obj_property>
+   </wvobject>
+</wave_config>

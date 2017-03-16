@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   11:24:00 03/07/2017
+// Create Date:   12:03:28 03/09/2017
 // Design Name:   RFALUDM
 // Module Name:   C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v
 // Project Name:  Lab4_B
@@ -36,17 +36,12 @@ module RFALUDM_TestFixure;
 	reg Regclock;
 	reg [8:0] SEin;
 	reg [10:0] OpCodefield;
-	reg [3:0] ALUoperation;
 	reg [63:0] writeDataMem;
-	reg [1:0] AluSrc;
+	reg AluSrc;
 	reg memtoReg;
 
 	// Outputs
-	wire [63:0] Data1;
-	wire [63:0] Data2;
 	wire Zero;
-	wire Out;
-	wire [63:0] ReadData;
 
 	// Instantiate the Unit Under Test (UUT)
 	RFALUDM uut (
@@ -61,15 +56,10 @@ module RFALUDM_TestFixure;
 		.Regclock(Regclock), 
 		.SEin(SEin), 
 		.OpCodefield(OpCodefield), 
-		.ALUoperation(ALUoperation), 
 		.writeDataMem(writeDataMem), 
 		.AluSrc(AluSrc), 
 		.memtoReg(memtoReg), 
-		.Data1(Data1), 
-		.Data2(Data2), 
-		.Zero(Zero), 
-		.Out(Out), 
-		.ReadData(ReadData)
+		.Zero(Zero)
 	);
 
 	initial begin
@@ -85,40 +75,30 @@ module RFALUDM_TestFixure;
 		Regclock = 0;
 		SEin = 0;
 		OpCodefield = 0;
-		ALUoperation = 0;
 		writeDataMem = 0;
 		AluSrc = 0;
 		memtoReg = 0;
 
-		//start 
-		#50;ALUOp = 2'b10; OpCodefield = 11'b10001011000; WriteReg = 3;memtoReg = 1; AluSrc = 1; MemRead = 1;
-		 
-		#50; Memclock = 1;
-        
 		// Add stimulus here
-
-
-
-
-/*								//(ALUOp, OpCodefield, A,B, ALUresult, Zero, ALUoperation)
-	ALUwithControl Lab2c (ALUOp, OpCodefield, A,B, ALUresult, Zero, ALUoperation); // Alu with control
-	
-																							//	 Data1,Dat2)
-	registerfile Lab3a(Read1, Read2, WriteReg, WriteData, RegWrite, Regclock, A, B);  //register file 
-	
-						//clock, MemWrite, MemRead, Address, WriteData, ReadData 
-	Data_Memory dm (Memclock, MemWrite, MemRead, ALUresult, WriteDataMem, In0 ); //data memory
-			
-				// In0, In1, Sel, Out)
-	mux  alusrc(  Data2, B, memtoReg, Out);//mux one between register file and alu
-	
-		
-				//In0,   In1,      Sel,      Out)
-	mux  memToReg( In0, ALUresult, AluSrc, WriteDataReg); //mux two after memory
-	
-	
-	SignExtender SE(  SEin, In1);//sighn extender 
-*/
+		MemRead = 1; DispIn = 9'b000101000; ALUSrc_Select = 1; RegWrite = 1; WriteReg = 5; ALUOp = 2'b11; Read1 = 0;
+		#50;  Regclock = 1;
+		#50;  Regclock = 0; MemRead = 1; DispIn = 9'b001010000; ALUSrc_Select = 1; RegWrite = 1; WriteReg = 10;
+		#50;  Regclock = 1; Read1 = 5; Read2 = 10;
+		#50 ALUOp = 2'b10; OpCodefield = 11'b10001010000; WriteReg = 1;  Regclock = 0; MemtoReg_Select = 0; ALUSrc_Select = 0;
+		#50;  Regclock = 1;
+		#50 ALUOp = 2'b10; OpCodefield = 11'b10101010000; WriteReg = 2;  Regclock = 0;
+		#50;  Regclock = 1;
+		#50 ALUOp = 2'b10; OpCodefield = 11'b10001011000; WriteReg = 3;  Regclock = 0;
+		#50;  Regclock = 1;
+		#50 ALUOp = 2'b10; OpCodefield = 11'b11001011000; WriteReg = 4;  Regclock = 0;
+		#50;  Regclock = 1;
+		#50 ALUOp = 2'b10; OpCodefield = 11'b11111000010; WriteReg = 6;  Regclock = 0;
+		#50;  Regclock = 1;
+		#50 ALUOp = 2'b10; OpCodefield = 11'b11101010000; WriteReg = 7;  Regclock= 0;
+		#50;  Regclock= 1;
+		#50; Read1 = 1; Read2 = 2;
+		#50; Read1 = 3; Read2 = 4;
+		#50; Read1 = 6; Read2 = 7;
 
 	end
       

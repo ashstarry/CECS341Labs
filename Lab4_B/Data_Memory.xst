@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/xst"
+elaborate
+-ifn Data_Memory.prj
+-ifmt mixed

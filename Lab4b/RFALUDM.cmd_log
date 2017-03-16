@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/jvarg/Documents/CECS341Labs/Lab4b/RFALUDM.xst" -ofn "C:/Users/jvarg/Documents/CECS341Labs/Lab4b/RFALUDM.syr" 

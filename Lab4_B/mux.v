@@ -19,10 +19,10 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module mux(
-    input In0,
-    input In1,
-    input [1:0] Sel,
-    output reg Out
+    input[63:0] In0,
+    input [63:0]In1,
+    input  Sel,
+    output reg [63:0] Out
     );
 	 
 always@(In0,In1,Sel)

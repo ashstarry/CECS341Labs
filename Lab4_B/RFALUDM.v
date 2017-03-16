@@ -21,7 +21,7 @@
 module RFALUDM(
 	
 	   //Reg file
-		input [5:0] Read1, 
+		input [5:0] Read1,
 		input [5:0] Read2,
 		input [5:0] WriteReg, //(address)
 		input [1:0] ALUOp,
@@ -32,50 +32,47 @@ module RFALUDM(
 		input Regclock, //used for datamemory too
 		input[8:0]  SEin,
 		input [10:0] OpCodefield,
-		input [3:0] ALUoperation,
 		input [63:0] writeDataMem,// write to data memory
-		input [1:0] AluSrc,
+		input  AluSrc,
 		input memtoReg,
-		
-		output [63:0] Data1,
-		output [63:0] Data2,
-		output Zero,
-		output Out,
-		output reg [63:0] ReadData,
-		
-		
-		wire [63:0] WriteDataReg, //used for datamemory
-	 	wire [63:0] ALUresult,
-		wire [63:0] A, //Data1 to A
-		wire [63:0] B,// out to in0
-	 	wire In0,//data2 to in0
-		wire In1,//se to in1
-	 	wire  [7:0] MemAddress // aluresult to MemAddress
-    );
-	 
-	 
-	 
-	 
-	 
-	 
-								//(ALUOp, OpCodefield, A,B, ALUresult, Zero, ALUoperation)
-	ALUwithControl Lab2c (ALUOp, OpCodefield, A,B, ALUresult, Zero, ALUoperation); // Alu with control
+		output Zero
 	
-																							//	 Data1,Dat2)
-	registerfile Lab3a(Read1, Read2, WriteReg, WriteData, RegWrite, Regclock, A, B);  //register file 
+		);
+	 
+	 wire [63:0] SEouttoIn1;//se to in1
+		wire [63:0] WriteDataReg; //used for datamemory
+	 	wire [63:0] ALUresult;
+		wire [63:0] A; //Data1 to A
+		wire [63:0] OuttoB;//mux out to in0
+	 	wire [63:0]ReadDataToIn0;//data2 to in0
+		wire [3:0] ALUoperation;
+		wire [63:0] Data2toIn0;
+    
+	 
+	 
+	 																							//	 Data1,Dat2)
+	registerfile Lab3a(Read1, Read2, WriteReg, WriteDataReg, RegWrite, Regclock, A,Data2toIn0);  //register file 
+	 
+					//(ALUOp, OpCodefield, ALUoperation)
+	ALUControl aluControl(ALUOp, OpCodefield, ALUoperation);
+	 
+					//(Aluoperation, A, B, Aluresult, Zero);
+	LEGv8  alu(ALUoperation,A ,OuttoB ,ALUresult ,Zero );
 	
 						//clock, MemWrite, MemRead, Address, WriteData, ReadData 
-	Data_Memory dm (Memclock, MemWrite, MemRead, ALUresult, WriteDataMem, In0 ); //data memory
+	Data_Memory dm (Memclock, MemWrite, MemRead, ALUresult, writeDataMem, ReadDataToIn0 ); //data memory
+	
+	
+				//In0,   In1,      Sel,      Out)
+	mux  memToReg( ReadDataToIn0, ALUresult, memtoReg, WriteDataReg); //mux two after memory
+	
 			
 				// In0, In1, Sel, Out)
-	mux  alusrc(  Data2, B, memtoReg, Out);//mux one between register file and alu
+	mux  alusrc( Data2toIn0, SEouttoIn1, AluSrc ,OuttoB);//mux one between register file and alu
 	
 		
-				//In0,   In1,      Sel,      Out)
-	mux  memToReg( In0, ALUresult, AluSrc, WriteDataReg); //mux two after memory
 	
-	
-	SignExtender SE(  SEin, In1);//sighn extender 
+	SignExtender SE(  SEin, SEouttoIn1);//sighn extender 
 
 	 
 

@@ -79,7 +79,7 @@ module RFALUtest;
 		#50; clock = 1;
 		#50 ALUOp = 2'b10; OpCodefield = 11'b10101010000; WriteReg = 2; clock = 0;
 		#50; clock = 1;
-		#50 ALUOp = 2'b10; OpCodefield = 11'b10001011000; WriteReg = 3; clock = 0;
+		#50 ALUOp = 2'b10; OpCodefield = 11'b10001011000; WriteReg = 3; clock = 0;//adding
 		#50; clock = 1;
 		#50 ALUOp = 2'b10; OpCodefield = 11'b11001011000; WriteReg = 4; clock = 0;
 		#50; clock = 1;

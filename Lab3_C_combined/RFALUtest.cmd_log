@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/jvarg/Documents/CECS341Labs/Lab3_C_combined/RFALUtest.xst" -ofn "C:/Users/jvarg/Documents/CECS341Labs/Lab3_C_combined/RFALUtest.syr" 
+xst -intstyle ise -ifn "C:/Users/jvarg/Documents/CECS341Labs/Lab3_C_combined/RFALUtest.xst" -ofn "C:/Users/jvarg/Documents/CECS341Labs/Lab3_C_combined/RFALUtest.syr" 

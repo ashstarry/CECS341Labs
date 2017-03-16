@@ -34,10 +34,10 @@ module registerfile(
 	 reg [63:0] RF[0:31];
 	  integer i =0;
 		
-	  initial 
+	  initial begin
 	  for(i  =0; i <=31; i = i + 1 ) 
 		   RF[i] = 0;
-   
+		end
 	 
 
 	

@@ -1,0 +1,29 @@
+Command line:
+   RFALUDM_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50001
+
+Fri Mar 10 22:47:22 2017
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 387.932 Meg
+
+ Total Signals          : 86
+ Total Nets             : 638
+ Total Signal Drivers   : 14
+ Total Blocks           : 11
+ Total Primitive Blocks : 8
+ Total Processes        : 26
+ Total Traceable Variables  : 27
+ Total Scalar Nets and Variables : 5114
+Total Line Count : 95
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 387.932 Meg
+
+Fri Mar 10 22:47:29 2017
+

@@ -1,0 +1,18 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure_isim_beh.exe -prj C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure_beh.prj work.RFALUDM_TestFixure work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/SignExtender.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/registerfile.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/mux.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/LEGv8.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/Data_Memory.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/ALUControl.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" into library work
+ERROR:HDLCompiler:69 - "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" Line 83: <DispIn> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" Line 85: <DispIn> is not declared.
+ERROR:HDLCompiler:69 - "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" Line 87: <MemtoReg_Select> is not declared.
+ERROR:HDLCompiler:598 - "C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v" Line 25: Module <RFALUDM_TestFixure> ignored due to previous errors.
+Verilog file C:/Users/jvarg/Documents/CECS341Labs/Lab4_B/RFALUDM_TestFixure.v ignored due to errors
