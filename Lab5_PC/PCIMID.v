@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    12:06:07 03/21/2017 
+// Create Date:    18:11:31 03/27/2017 
 // Design Name: 
 // Module Name:    PCIMID 
 // Project Name: 
@@ -18,13 +18,18 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PCIMID();
-input PCin;
+module PCIMID(Clock);
+
 input Clock;
+wire [63:0] AdderOut;
+wire [63:0] PCout;
 
-output AdderOut;
-output [63:0] PCout;
 
-wire AdderIn;
-	AdderPCout AdderPCout( .AdderIn(AdderIn) , .AdderOut(AdderOut));
-	PC                 PC(.PCin(PCin), .PCout(PCout), .Clock(Clock));
+
+//AdderPCout( AdderIn ,AdderOut);
+//PC(PCin, PCout, Clock);
+
+
+	AdderPCout AdderPCout( .in(PCout), .out(AdderOut));
+	PC   PC(.PCin(AdderOut), .PCout(PCout), .Clock(Clock));
+endmodule

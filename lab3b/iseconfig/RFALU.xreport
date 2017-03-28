@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-14T22:02:27</DateModified>
+  <DateModified>2017-03-19T20:56:32</DateModified>
   <ModuleName>RFALU</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/CECS341/lab3b/iseconfig/RFALU.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/CECS341/lab3b\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/jvarg/Documents/CECS341Labs/lab3b/iseconfig/RFALU.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/jvarg/Documents/CECS341Labs/lab3b\</ImplementationReportsDirectory>
   <DateInitialized>2017-02-07T18:59:52</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

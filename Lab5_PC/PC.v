@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    11:00:34 03/21/2017 
+// Create Date:    18:03:46 03/27/2017 
 // Design Name: 
 // Module Name:    PC 
 // Project Name: 
@@ -20,11 +20,9 @@
 //////////////////////////////////////////////////////////////////////////////////
 module PC(PCin, PCout, Clock);
 
-input PCin;
+input [63:0] PCin;
 input Clock;
 output reg[63:0] PCout;
-
-
 
 reg [63:0] regPC;
 
@@ -40,3 +38,4 @@ initial begin
 	end
 
 endmodule
+

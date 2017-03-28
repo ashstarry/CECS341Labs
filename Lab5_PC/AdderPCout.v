@@ -18,12 +18,12 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module AdderPCout( AdderIn ,AdderOut);
+module AdderPCout( in, out);
 
-input AdderIn;
-wire AdderOut;
+input [63:0] in;
+output reg [63:0] out;
 
-assign AdderOut = PCOUT + 4;
-
+always@(in)
+	out <= in + 4;
 
 endmodule

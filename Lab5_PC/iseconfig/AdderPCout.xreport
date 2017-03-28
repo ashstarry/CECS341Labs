@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-03-21T12:00:36</DateModified>
+  <DateModified>2017-03-27T17:58:38</DateModified>
   <ModuleName>AdderPCout</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/jvarg/Documents/CECS341Labs/Lab5_PC/iseconfig/AdderPCout.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/jvarg/Documents/CECS341Labs/Lab5_PC</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/jvarg/Documents/CECS341Labs/Lab5_PC\</ImplementationReportsDirectory>
   <DateInitialized>2017-03-21T12:00:35</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
