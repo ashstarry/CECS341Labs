@@ -50,6 +50,19 @@ module PCIMID_testfixure;
 		#50; Clock = 0;
 		#50; Clock = 1;
 		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		
 		
 		$stop; //STAHP
 	

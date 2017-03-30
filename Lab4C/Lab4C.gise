@@ -54,6 +54,10 @@
     <transform xil_pn:end_ts="1489686977" xil_pn:in_ck="-3972516228825908828" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1489686977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALUControl.v"/>
       <outfile xil_pn:name="ALUSrc.v"/>
       <outfile xil_pn:name="ALUwithControl.v"/>
@@ -81,6 +85,11 @@
     <transform xil_pn:end_ts="1489686977" xil_pn:in_ck="-3972516228825908828" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1489686977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ALUControl.v"/>
       <outfile xil_pn:name="ALUSrc.v"/>
       <outfile xil_pn:name="ALUwithControl.v"/>
@@ -96,8 +105,11 @@
     <transform xil_pn:end_ts="1489686983" xil_pn:in_ck="-3972516228825908828" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6159798295305868151" xil_pn:start_ts="1489686977">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="RFALUDM_TestFixure_beh.prj"/>
       <outfile xil_pn:name="RFALUDM_TestFixure_isim_beh.exe"/>

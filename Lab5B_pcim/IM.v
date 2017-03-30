@@ -21,13 +21,25 @@
 module IM(Pc, InstrOut);
 
 	 input [63:0]Pc;
-	 output [31:0] InstrOut;
+	 output reg [31:0] InstrOut;
 	
 	 reg [7:0] IM [0:255];
+	 reg [7:0] addr = 0;
 
-
-	 assign  InstrOut = {IM[0],IM[1],IM[2],IM[3]};
-
+	
+	  always @ (Pc)
+	
+	 begin
+	 addr = Pc[7:0];
+	 assign InstrOut = {
+		IM[addr + 0],
+		IM[addr + 1],
+		IM[addr + 2],
+		IM[addr + 3]
+		
+	
+	};
+	end
 
 	 initial
 	 begin
@@ -73,28 +85,28 @@ module IM(Pc, InstrOut);
 	 //store
 	 
 	  //Store 1
-	 IM[20] = 8'b11111000;	
-	 IM[21] = 8'b00000000;	//Store x1 to 0
-	 IM[22] = 8'b00000000;
-	 IM[23] = 8'b00000001;
+	 IM[23] = 8'b11111000;	
+	 IM[24] = 8'b00000000;	//Store x1 to 0
+	 IM[25] = 8'b00000000;
+	 IM[26] = 8'b00000001;
 	 
 	   //Store 2
-	 IM[20] = 8'b11111000;	
-	 IM[21] = 8'b00000000;	//Store x2 to 8
-	 IM[22] = 8'b10000000;
-	 IM[23] = 8'b00000010;
+	 IM[27] = 8'b11111000;	
+	 IM[28] = 8'b00000000;	//Store x2 to 8
+	 IM[29] = 8'b10000000;
+	 IM[30] = 8'b00000010;
 	 
 	   //Store 3
-	 IM[20] = 8'b11111000;	
-	 IM[21] = 8'b00000001;//Store x3 to 16 
-	 IM[22] = 8'b00000000;
-	 IM[23] = 8'b00000011;
+	 IM[31] = 8'b11111000;	
+	 IM[32] = 8'b00000001;//Store x3 to 16 
+	 IM[33] = 8'b00000000;
+	 IM[34] = 8'b00000011;
 	 
 	   //Store 4
-	 IM[20] = 8'b11111000;	
-	 IM[21] = 8'b00000001;	//Store x4 to 24
-	 IM[22] = 8'b10000000;
-	 IM[23] = 8'b00000100;
+	 IM[35] = 8'b11111000;	
+	 IM[36] = 8'b00000001;	//Store x4 to 24
+	 IM[37] = 8'b10000000;
+	 IM[38] = 8'b00000100;
 	 
 	
 	 end

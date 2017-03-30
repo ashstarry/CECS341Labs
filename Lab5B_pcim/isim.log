@@ -7,7 +7,7 @@ INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
 INFO:Security:68 - For more information or for assistance in obtaining 
  a license, please run the Xilinx License Configuration Manager
        (xlcm or "Manage Xilinx Licenses".)
-INFO:Security:68a - user is jvarg, on host DESKTOP-UHBN797.
+INFO:Security:68a - user is jvarg, on host DESKTOP-EGRKM1D.
 ERROR:Security:14 - No feature was available for 'ISIM'.
 
 No such feature exists.
@@ -26,4 +26,3 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-Stopped at time : 500 ns :  in File "C:/Users/jvarg/Documents/CECS341Labs/Lab5B_pcim/PCIMID_testfixure.v" Line 54 
