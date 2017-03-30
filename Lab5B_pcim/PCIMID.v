@@ -18,9 +18,10 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PCIMID(Clock);
+module PCIMID(Clock,InstrOut);
 
 input Clock;
+output [31:0] InstrOut;
 wire [63:0] AdderOut;
 wire [63:0] PCout;
 
@@ -29,7 +30,7 @@ wire [63:0] PCout;
 //AdderPCout( AdderIn ,AdderOut);
 //PC(PCin, PCout, Clock);
 
-
+	IM  IM(.Pc(PCout), .InstrOut(InstrOut));
 	AdderPCout AdderPCout( .in(PCout), .out(AdderOut));
 	PC   PC(.PCin(AdderOut), .PCout(PCout), .Clock(Clock));
 endmodule

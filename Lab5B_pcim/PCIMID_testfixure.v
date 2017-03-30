@@ -4,10 +4,10 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   21:57:31 03/27/2017
+// Create Date:   16:25:00 03/29/2017
 // Design Name:   PCIMID
-// Module Name:   C:/Users/jvarg/Documents/CECS341Labs/Lab5_PC/PCIMID_testfixure.v
-// Project Name:  Lab5_PC
+// Module Name:   C:/Users/jvarg/Documents/CECS341Labs/Lab5B_pcim/PCIMID_testfixure.v
+// Project Name:  Lab5B_pcim
 // Target Device:  
 // Tool versions:  
 // Description: 
@@ -27,29 +27,35 @@ module PCIMID_testfixure;
 	// Inputs
 	reg Clock;
 
+	// Outputs
+	wire [31:0] InstrOut;
+
 	// Instantiate the Unit Under Test (UUT)
 	PCIMID uut (
-		.Clock(Clock)
+		.Clock(Clock), 
+		.InstrOut(InstrOut)
 	);
 
 	initial begin
 		// Initialize Inputs
 		Clock = 0;
+		
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		
+		$stop; //STAHP
+	
+        
+		// Add stimulus here
 
-		#50; Clock = 1; 
-		#50; Clock = 0;
-		#50; Clock = 1;
-		#50; Clock = 0;
-		#50; Clock = 1;
-		#50; Clock = 0;
-		#50; Clock = 1;
-		#50; Clock = 0;
-		#50; Clock = 1;
-		#50; Clock = 0;
-		#50; Clock = 1;
-		#50; Clock = 0;
-		#50; Clock = 1;
-		#50; Clock = 0;
 	end
       
 endmodule

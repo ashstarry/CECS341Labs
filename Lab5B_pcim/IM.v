@@ -18,85 +18,84 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module IM(Address, clock, WriteData);
-	input [63:0] Address;
-	input clock;
-	input MemRead;
-	output reg [63:0] ReadData;
-    
-	 
+module IM(Pc, InstrOut);
+
+	 input [63:0]Pc;
+	 output [31:0] InstrOut;
+	
 	 reg [7:0] IM [0:255];
-	 
-	 reg [7:0] addr = 0;
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	 
-	/*
-	 always @ (MemRead, Address)
-	 begin
-	 if(MemRead ==1)
-	 begin
-	 addr = Address[7:0];
-	 assign ReadData = {
-		DM[addr + 0],
-		DM[addr + 1],
-		DM[addr + 2],
-		DM[addr + 3],
-		DM[addr + 4],
-		DM[addr + 5],
-		DM[addr + 6],
-		DM[addr + 7]
-	};
-	end
-	end
-	 
-	 always @ (posedge clock)
-	 begin
-	 if(MemWrite == 1)
-	 begin
-	 addr = Address[7:0];
-	 DM[addr + 0] = WriteData[63:56];
-	 DM[addr + 1] = WriteData[55:48];
-	 DM[addr + 2] = WriteData[47:40];
-	 DM[addr + 3] = WriteData[39:32];
-	 DM[addr + 4] = WriteData[31:24];
-	 DM[addr + 5] = WriteData[23:16];
-	 DM[addr + 6] = WriteData[15:8];
-	 DM[addr + 7] = WriteData[7:0];
-	 end
-	 end
-	*/
+
+
+	 assign  InstrOut = {IM[0],IM[1],IM[2],IM[3]};
+
+
 	 initial
 	 begin
-	 IM[0] = 8'h00;
-	 IM[1] = 8'h00;
-	 IM[2] = 8'h00;
-	 IM[3] = 8'h00;
-	 IM[4] = 8'h00;
-	 IM[5] = 8'h00;
-	 IM[6] = 8'h00;
-	 IM[40] = 8'h55;
-	 IM[41] = 8'h55;
-	 IM[42] = 8'h55;
-	 IM[43] = 8'h55;
-	 IM[44] = 8'h55;
-	 IM[45] = 8'h55;
-	 IM[46] = 8'h55;
-	 IM[47] = 8'h55;
-	 IM[80] = 8'haa;
-	 IM[81] = 8'haa;
-	 IM[82] = 8'haa;
-	 IM[83] = 8'haa;
-	 IM[84] = 8'haa;
-	 IM[85] = 8'haa;
-	 IM[86] = 8'haa;
-	 IM[87] = 8'haa;
+	 //load1
+	 IM[0] = 8'b11111000;//Load1 beginning 
+	 IM[1] = 8'b01000010;// register 5 value
+	 IM[2] = 8'b00000000;
+	 IM[3] = 8'b00000101;//load1 ending 
+	 
+	 //load2
+	 IM[4] = 8'b11111000;//load2 beginning
+	 IM[5] = 8'b01000101;//register 6 value
+	 IM[6] = 8'b00000000;
+	 IM[7] = 8'b00001010;//load1 ending 
+	 
+	 //AluOp1
+	 
+	 //add
+	 IM[8] = 8'b10001011;	
+	 IM[9] = 8'b00001010;	//add reg5 with reg6 to reg 1
+	 IM[10] = 8'b00000000;
+	 IM[11] = 8'b10100001;	
+	 
+	 //subtract
+	 IM[12] = 8'b11001011;	
+	 IM[13] = 8'b00001010;	//subtract reg5 with reg6 to reg 2
+	 IM[14] = 8'b00000000;
+	 IM[15] = 8'b10100010;	
+	 
+	 //and
+	 
+	 IM[16] = 8'b10001010;	
+	 IM[17] = 8'b00001010;	//and reg5 with reg6 to reg 3
+	 IM[18] = 8'b00000000;
+	 IM[19] = 8'b10100011;
+	 
+	 //or
+	 IM[20] = 8'b10101010;	
+	 IM[21] = 8'b00001010;	//or reg5 with reg6 to reg 3
+	 IM[22] = 8'b00000000;
+	 IM[23] = 8'b10100100;
+	 
+	 //store
+	 
+	  //Store 1
+	 IM[20] = 8'b11111000;	
+	 IM[21] = 8'b00000000;	//Store x1 to 0
+	 IM[22] = 8'b10000000;
+	 IM[23] = 8'b00000001;
+	 
+	   //Store 2
+	 IM[20] = 8'b11111000;	
+	 IM[21] = 8'b00000001;	//Store x2 to 8
+	 IM[22] = 8'b00000000;
+	 IM[23] = 8'b00000010;
+	 
+	   //Store 3
+	 IM[20] = 8'b11111000;	
+	 IM[21] = 8'b00000010;	//Store x3 to 16 
+	 IM[22] = 8'b00000000;
+	 IM[23] = 8'b00000011;
+	 
+	   //Store 4
+	 IM[20] = 8'b11111000;	
+	 IM[21] = 8'b00000100;	//Store x4 to 24
+	 IM[22] = 8'b00000000;
+	 IM[23] = 8'b00000100;
+	 
+	
 	 end
-
-
 endmodule
