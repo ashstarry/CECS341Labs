@@ -51,9 +51,37 @@ module PCIMID_testfixure;
 	initial begin
 		// Initialize Inputs
 		Clock = 0;
+		
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+			#50; Clock = 1;
+	   #50; Clock = 0;
+		
 
-		// Wait 100 ns for global reset to finish
-		#100;
         
 		// Add stimulus here
 
