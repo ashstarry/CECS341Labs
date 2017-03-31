@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-02-07T11:35:05</DateModified>
+  <DateModified>2017-03-30T10:52:21</DateModified>
   <ModuleName>ALUControl</ModuleName>
   <SummaryTimeStamp>2017-01-25T14:44:38</SummaryTimeStamp>
-  <SavedFilePath>D:/CECS341/lab2b/iseconfig/ALUControl.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/CECS341/lab2b\</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/jvarg/Documents/CECS341Labs/lab2b/iseconfig/ALUControl.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/jvarg/Documents/CECS341Labs/lab2b\</ImplementationReportsDirectory>
   <DateInitialized>2017-01-25T13:00:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
