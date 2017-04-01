@@ -27,14 +27,17 @@ output reg[63:0] PCout;
 reg [63:0] regPC;
 
 
-always@(posedge Clock) 
+	always@(posedge Clock)begin
 	 regPC <= PCin;
-always@(regPC)	
-
- PCout <= 	regPC;
 	
-initial begin
-	regPC = 0;
+	end
+		always@(regPC)
+			PCout <= 	regPC;
+	
+
+	
+	initial begin
+		regPC = 0;
 	end
 
 endmodule

@@ -1,4 +1,4 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/RFALUDM_TestFixure_isim_beh.exe -prj C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/RFALUDM_TestFixure_beh.prj work.RFALUDM_TestFixure work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/TopModule_testfixure_isim_beh.exe -prj C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/TopModule_testfixure_beh.prj work.TopModule_testfixure work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
@@ -8,31 +8,39 @@ Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of
 Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/SE.v" into library work
 Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/registerfile.v" into library work
 Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/Reg2Loc.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/PC.v" into library work
 Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/MemtoReg.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/IM.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/ID.v" into library work
 Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/DataMemory.v" into library work
 Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/ALUwithControl.v" into library work
 Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/ALUSrc.v" into library work
-Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/RFALUDM.v" into library work
-Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/RFALUDM_TestFixure.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/AdderPCout.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/PCIMID_RFALUDMRF_TopModule.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/TopModule_testfixure.v" into library work
 Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:1016 - "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/RFALUDM_TestFixure.v" Line 47: Port A is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/PCIMID_RFALUDMRF_TopModule.v" Line 92: Size mismatch in connection of port <SEin>. Formal port size is 9-bit while actual signal size is 11-bit.
 Completed static elaboration
+Compiling module AdderPCout
+Compiling module PC
+Compiling module IM
+Compiling module ID
+Compiling module registerfile
+Compiling module SE
 Compiling module ALUControl
 Compiling module LEGv8
 Compiling module ALUwithControl
-Compiling module registerfile
-Compiling module ALUSrc
 Compiling module DataMemory
-Compiling module SE
+Compiling module ALUSrc
 Compiling module MemtoReg
 Compiling module Reg2Loc
-Compiling module RFALUDM
-Compiling module RFALUDM_TestFixure
+Compiling module PCIMID_RFALUDMRF_TopModule
+Compiling module TopModule_testfixure
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 12 Verilog Units
-Built simulation executable C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/RFALUDM_TestFixure_isim_beh.exe
-Fuse Memory Usage: 28860 KB
-Fuse CPU Usage: 327 ms
+Compiled 16 Verilog Units
+Built simulation executable C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/TopModule_testfixure_isim_beh.exe
+Fuse Memory Usage: 28944 KB
+Fuse CPU Usage: 359 ms

@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="HDLCompiler" num="1016" delta="unknown" >"C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/RFALUDM_TestFixure.v" Line 47: Port <arg fmt="%s" index="1">A</arg> is not connected to this instance
+<msg type="warning" file="HDLCompiler" num="189" delta="unknown" >"C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/PCIMID_RFALUDMRF_TopModule.v" Line 92: Size mismatch in connection of port &lt;<arg fmt="%s" index="3">SEin</arg>&gt;. Formal port size is <arg fmt="%d" index="2">9</arg>-bit while actual signal size is <arg fmt="%d" index="1">11</arg>-bit.
 </msg>
 
 </messages>

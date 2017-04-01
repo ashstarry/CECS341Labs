@@ -27,19 +27,16 @@ module IM(Pc, InstrOut);
 	 reg [7:0] addr = 0;
 
 	
-	  always @ (Pc)
-	
-	 begin
-	 addr = Pc[7:0];
-	 assign InstrOut = {
-		IM[addr + 0],
-		IM[addr + 1],
-		IM[addr + 2],
-		IM[addr + 3]
-		
-	
-	};
-	end
+	  always@(Pc)
+			 begin
+			 addr = Pc[7:0];
+			 assign InstrOut = {
+				IM[addr + 0],
+				IM[addr + 1],
+				IM[addr + 2],
+				IM[addr + 3]
+			 };
+	  end
 
 	 initial
 	 begin

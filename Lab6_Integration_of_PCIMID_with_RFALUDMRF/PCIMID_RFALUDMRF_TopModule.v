@@ -18,129 +18,117 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PCIMID_RFALUDMRF_TopModule(Clock, Reg2Loc,ALUSrc, MemtoReg, 
-											RegWrite, MemRead, MemWrite, ALUOp, 
-											Rt, RegWrite, RF_clock, DM_clock, MemRead, 
-											MemWrite,DispIn, ALUSrc_Select, MemtoReg_Select, 
-											Reg2Loc_Select, Zero,);
+module PCIMID_RFALUDMRF_TopModule(PC_Clock,RF_Clock,DM_Clock, Zero);
 
-      input Clock;
-      input [1:0] ALUOp;
-		input [10:0] OpCodefield;
-		input [4:0] Rn;
-		input [4:0] Rm;
+      input PC_Clock;
+		input RF_Clock;
+		input DM_Clock;
 
-		input [4:0] Rt;
-		input RegWrite;
-		input RF_clock;
-		input DM_clock;
-		input MemRead;
-		input MemWrite;
-		input [8:0] DispIn;
-		input ALUSrc_Select;
-		input MemtoReg_Select;
-		input  Reg2Loc_Select;
+	
 		
+	  output Zero;
+	  
+	   //Control wires
+		wire Reg2Loc_Select;
+		wire MemRead;
+		wire MemtoReg_Select;
+		wire [1:0] ALUOp;
+		wire MemWrite;
+		wire ALUSrc_Select;
+		wire RegWrite;
 		
-		output Reg2Loc;
-		output ALUSrc;
-		output MemtoReg;
-		output RegWrite;
-		output MemRead;
-		output MemWrite;
-		output [1:0] ALUOp;
-		
-      output Zero;
-		wire [31:0]  InstrOut;
-		wire  [63:0] AdderOut;
-		wire  [63:0] PCout;
+      //Instruction memory wires		
+		wire [31:0] InstrOut;
+		wire [63:0] AdderOut;
+		wire [63:0] PCout;
 
 		wire [63:0] A;
-		wire [63:0] SrcOut;		
+		wire [63:0] SrcOut;	//	 ALUSrc;
 		wire [63:0] ReadData;
 		wire [63:0] SEout;
 		wire [63:0] ALUresult;
-		wire [3:0] ALUoperation;
+		wire [3:0]  ALUoperation;
 		wire [63:0] ToRegOut;
 		wire [63:0] ReadData2Out;
-		wire [4:0] rrA2Out;
+		wire [4:0]  rrA2Out;
 
 
 		//lab 5
-		AdderPCout AdderPCout( .in(         PCout           ), //adder that connects to pc and instruction memory
-									  .out(        AdderOut        ) //adderout wire
+		AdderPCout AdderPCout( .in(         PCout              ), //adder that connects to pc and instruction memory
+									  .out(        AdderOut           ) //adderout wire
 									 );
 									  
-						  PC  PC (.PCin(        AdderOut        ), //pc module, adderout wire
-									 .PCout(       PCout           ), 
-									 .Clock(       Clock           )       
+						  PC  PC (.PCin(        AdderOut           ), //pc module, adderout wire
+									 .PCout(       PCout              ), 
+									 .Clock(       PC_Clock          )       
 									 );
 									 
-						  IM   IM(.Pc(          PCout           ), //instruction module, pc out wire
-									.InstrOut(     InstrOut  )    
+						  IM   IM(.Pc(          PCout              ), //instruction module, pc out wire
+									 .InstrOut(     InstrOut          )    
 									 );
 									
-						  ID   ID(.Opcode(      InstrOut [31:21]), // instruction decoder (Control), instruc out wire
-									.Reg2Loc(      Reg2Loc         ), 
-									.ALUSrc(       ALUSrc          ), 
-									.MemtoReg(     MemtoReg        ), 
-									.RegWrite(     RegWrite        ), 
-									.MemRead(      MemRead         ), 
-									.MemWrite(     MemWrite        ),
-									.ALUOp(        ALUOp           )
+						  ID   ID(.Opcode(      InstrOut [31:21]   ), // CONNTROL MODULE = instruction decoder (Control), instruc out wire
+									.Reg2Loc(      Reg2Loc_Select     ), //to   Reg2Loc mux
+									.ALUSrc(       ALUSrc_Select      ), 
+									.MemtoReg(     MemtoReg_Select    ), 
+									.RegWrite(     RegWrite           ), 
+									.MemRead(      MemRead            ), 
+									.MemWrite(     MemWrite           ),
+									.ALUOp(        ALUOp              )
 									 );
-		
-		//lab4
-      ALUwithControl Lab2c(.ALUOp(        ALUOp           ), //alu with control
-		                     .OpCodefield(  OpCodefield     ), 
-									.A(            A               ), 
-									.B(            SrcOut          ), 
-									.ALUresult(    ALUresult       ), 
-									.Zero(         Zero            ), 
-									.ALUoperation( ALUoperation    )
-									);
-		
-		  registerfile Lab3a(.Read1(        Rn              ), //register file
-		                     .Read2(        rrA2Out         ), 
-									.WriteReg(     Rt              ), 
-									.WriteData(    ToRegOut        ), 
-									.RegWrite(     RegWrite        ), 
-									.clock(        RF_clock        ), 
-									.Data1(        A               ), 
-									.Data2(        ReadData2Out    )
-									);
-		
-		    
-		
-		       DataMemory DM(.Address(      ALUresult       ), //data memory
-		                     .clock(        DM_clock        ), 
-									.MemRead(      MemRead         ), 
-									.MemWrite(     MemWrite        ),
-		                     .WriteData(    ReadData2Out    ), 
-									.ReadData(     ReadData        )
-									);
-		
-	                	SE SE(.SEin(         DispIn          ), //sign extender
-		                     .SEout(        SEout           )
-									);
-					
-				//MUXES					
-				 ALUSrc ALUSrc(.RegIn(        ReadData2Out    ), //alu source  MUX
-								   .DispIn(       SEout           ), 
-								   .Select(       ALUSrc_Select   ), 
-								   .SrcOut(       SrcOut          )
+									 
+									 
+			//lab4
+		  registerfile Lab3a(.Read1(        InstrOut [9:5]     ), //register file, Rn
+		                     .Read2(        rrA2Out            ), 
+									.WriteReg(     InstrOut [4:0]     ), //rt
+									.WriteData(    ToRegOut           ), 
+									.RegWrite(     RegWrite           ), 
+									.clock(        RF_Clock           ), 
+									.Data1(        A                  ), 
+									.Data2(        ReadData2Out       )
 									);
 									
-		   MemtoReg MemtoReg(.DMIn(         ReadData        ), //mem to reg  MUX 
-			                  .ALUIn(        ALUresult       ), 
-									.Select(       MemtoReg_Select ), 
-									.ToRegOut(     ToRegOut        )
+		 	            SE SE(.SEin(         InstrOut [31:21]   ), //sign extender
+		                     .SEout(        SEout              )
+									);
+									
+      ALUwithControl Lab2c(.ALUOp(        ALUOp              ), //alu with control
+		                     .OpCodefield(   InstrOut [31:21]  ), 
+									.A(            A                  ), 
+									.B(            SrcOut             ), 
+									.ALUresult(    ALUresult          ), 
+									.Zero(         Zero               ), 
+									.ALUoperation( ALUoperation       )
 									);
 	
-		     Reg2Loc Reg2Loc(.RmIn(         Rm              ), // reg        MUX
-			                  .RtIn(         Rt              ), 
-									.Select(       Reg2Loc_Select  ), 
-									.rrA2Out(      rrA2Out         )
+		       DataMemory DM(.Address(      ALUresult          ), //data memory
+		                     .clock(        DM_clockero           ), 
+									.MemRead(      MemRead            ), 
+									.MemWrite(     MemWrite           ),
+		                     .WriteData(    ReadData2Out       ), 
+									.ReadData(     ReadData           )
+									);
+		
+	               
+					
+				//MUXES					
+				 ALUSrc ALUSrc(.RegIn(        ReadData2Out       ), //alu source  MUX
+								   .DispIn(       SEout              ), 
+								   .Select(       ALUSrc_Select      ), 
+								   .SrcOut(       SrcOut             )
+									);
+									
+		   MemtoReg MemtoReg(.DMIn(         ReadData           ), //mem to reg  MUX 
+			                  .ALUIn(        ALUresult          ), 
+									.Select(       MemtoReg_Select    ), 
+									.ToRegOut(     ToRegOut           )
+									);
+	
+		     Reg2Loc Reg2Loc(.RmIn(         InstrOut [20:16]   ), // reg, Rm        MUX
+			                  .RtIn(         InstrOut [4:0]     ), //Rt
+									.Select(       Reg2Loc_Select     ), 
+									.rrA2Out(      rrA2Out            )
 									);
 			//missing modules for branch instructions
 			
@@ -151,5 +139,6 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Reg2Loc,ALUSrc, MemtoReg,
 			//Mux
 			
 			//And Gate
+	
 
 endmodule
