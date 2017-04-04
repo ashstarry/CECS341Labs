@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-04-01T09:13:16</DateModified>
+  <DateModified>2017-04-03T14:42:35</DateModified>
   <ModuleName>PCIMID_RFALUDMRF_TopModule</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/iseconfig/PCIMID_RFALUDMRF_TopModule.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF\</ImplementationReportsDirectory>
   <DateInitialized>2017-04-01T09:13:16</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

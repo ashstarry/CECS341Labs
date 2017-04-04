@@ -7,7 +7,7 @@ INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
 INFO:Security:68 - For more information or for assistance in obtaining 
  a license, please run the Xilinx License Configuration Manager
        (xlcm or "Manage Xilinx Licenses".)
-INFO:Security:68a - user is jvarg, on host DESKTOP-UHBN797.
+INFO:Security:68a - user is jvarg, on host DESKTOP-EGRKM1D.
 ERROR:Security:14 - No feature was available for 'ISIM'.
 
 No such feature exists.
@@ -20,7 +20,6 @@ available at "www.flexerasoftware.com".
 WARNING: A full ISim License cannot be checked out due to the issues listed above. Please use Xilinx License Configuration Manager to fix these issues in order to check out a full ISim license.
 WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
 This is a Lite version of ISim.
-WARNING: For instance uut/SE/, width 9 of formal port SEin is not equal to width 11 of actual.
 Time resolution is 1 ps
 # onerror resume
 # wave add /

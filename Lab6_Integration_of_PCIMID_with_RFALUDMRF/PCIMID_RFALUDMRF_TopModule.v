@@ -89,7 +89,7 @@ module PCIMID_RFALUDMRF_TopModule(PC_Clock,RF_Clock,DM_Clock, Zero);
 									.Data2(        ReadData2Out       )
 									);
 									
-		 	            SE SE(.SEin(         InstrOut [31:21]   ), //sign extender
+		 	            SE SE(.SEin(         InstrOut [20:12]   ), //sign extender
 		                     .SEout(        SEout              )
 									);
 									

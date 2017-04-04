@@ -47,18 +47,10 @@ module TopModule_testfixure;
 		DM_Clock = 0;
 
 		#50;PC_Clock = 1;
-		#50;
-		#50;
-		#50;
-		#50;
-		#50;
-		#50;
-		#50;
-		#50;
-		#50;
-		#50;
-		#50;
-		#50;
+		#50;PC_Clock = 0;
+		#50;PC_Clock = 1;
+		#50;PC_Clock = 0;
+	
 		
 	
 		

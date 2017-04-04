@@ -42,9 +42,9 @@ module IM(Pc, InstrOut);
 	 begin
 	 //load1
 	 IM[0] = 8'b11111000;//Load1 beginning 
-	 IM[1] = 8'b01000010;// register 5 value
-	 IM[2] = 8'b00000000;
-	 IM[3] = 8'b00000101;//load1 ending 
+	 IM[1] = 8'b010_00010;// register 5 value
+	 IM[2] = 8'b0000_00_00;
+	 IM[3] = 8'b000_00101;//load1 ending 
 	 
 	 //load2
 	 IM[4] = 8'b11111000;//load2 beginning
