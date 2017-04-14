@@ -22,8 +22,8 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/MemtoReg.v";
-static int ng1[] = {0, 0};
-static int ng2[] = {1, 0};
+static int ng1[] = {1, 0};
+static int ng2[] = {0, 0};
 
 
 
@@ -90,6 +90,6 @@ LAB8:    xsi_set_current_line(31, ng0);
 extern void work_m_00000000000204972206_3354035154_init()
 {
 	static char *pe[] = {(void *)Always_28_0};
-	xsi_register_didat("work_m_00000000000204972206_3354035154", "isim/TopModule_testfixure_isim_beh.exe.sim/work/m_00000000000204972206_3354035154.didat");
+	xsi_register_didat("work_m_00000000000204972206_3354035154", "isim/TopModule_TestFixure_isim_beh.exe.sim/work/m_00000000000204972206_3354035154.didat");
 	xsi_register_executes(pe);
 }

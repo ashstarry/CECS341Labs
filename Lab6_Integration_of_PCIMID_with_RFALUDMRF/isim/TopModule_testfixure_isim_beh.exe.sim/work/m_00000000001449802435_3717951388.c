@@ -460,6 +460,6 @@ LAB36:    t13 = (t11 * 8);
 extern void work_m_00000000001449802435_3717951388_init()
 {
 	static char *pe[] = {(void *)Cont_29_0,(void *)Always_30_1};
-	xsi_register_didat("work_m_00000000001449802435_3717951388", "isim/TopModule_testfixure_isim_beh.exe.sim/work/m_00000000001449802435_3717951388.didat");
+	xsi_register_didat("work_m_00000000001449802435_3717951388", "isim/TopModule_TestFixure_isim_beh.exe.sim/work/m_00000000001449802435_3717951388.didat");
 	xsi_register_executes(pe);
 }

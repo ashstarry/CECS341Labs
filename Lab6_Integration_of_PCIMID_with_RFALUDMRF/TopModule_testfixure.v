@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   14:02:30 03/31/2017
+// Create Date:   10:37:40 04/05/2017
 // Design Name:   PCIMID_RFALUDMRF_TopModule
-// Module Name:   C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/TopModule_testfixure.v
+// Module Name:   C:/Users/jvarg/Documents/CECS341Labs/Lab6_Integration_of_PCIMID_with_RFALUDMRF/TopModule_TestFixure.v
 // Project Name:  Lab6_Integration_of_PCIMID_with_RFALUDMRF
 // Target Device:  
 // Tool versions:  
@@ -22,38 +22,46 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module TopModule_testfixure;
+module TopModule_TestFixure;
 
 	// Inputs
-	reg PC_Clock;
-	reg RF_Clock;
-	reg DM_Clock;
+	reg Clock;
+
 
 	// Outputs
+	wire Branch;
 	wire Zero;
 
 	// Instantiate the Unit Under Test (UUT)
 	PCIMID_RFALUDMRF_TopModule uut (
-		.PC_Clock(PC_Clock), 
-		.RF_Clock(RF_Clock), 
-		.DM_Clock(DM_Clock), 
+		.Clock(Clock), 
+		.Branch(Branch), 
 		.Zero(Zero)
 	);
 
 	initial begin
 		// Initialize Inputs
-		PC_Clock = 0;
-		RF_Clock = 0;
-		DM_Clock = 0;
+		Clock = 0;
+	#50;Clock = 1;
+	#50;Clock = 0;
+	#50;Clock = 1;
+	#50;Clock = 0;
+	#50;Clock = 1;
+	#50;Clock = 0;
+	#50;Clock = 1;
+	#50;Clock = 0;
+	#50;Clock = 1;
+	#50;Clock = 0;
+	#50;Clock = 1;
+	#50;Clock = 0;
+		#50;Clock = 1;
+	#50;Clock = 0;
+		#50;Clock = 1;
+	#50;Clock = 0;
+	
+	
 
-		#50;PC_Clock = 1;
-		#50;PC_Clock = 0;
-		#50;PC_Clock = 1;
-		#50;PC_Clock = 0;
-	
-		
-	
-		
+
         
 		// Add stimulus here
 

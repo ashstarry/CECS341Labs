@@ -34,7 +34,7 @@ always@(regPC)
  PCout <= 	regPC;
 	
 initial begin
-	regPC = 0;
+	regPC = -4;
 	end
 
 endmodule

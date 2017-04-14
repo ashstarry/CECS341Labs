@@ -22,25 +22,34 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab6_Integration_of_PCIMID_with_RFALUDMRF.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="AdderPCout_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DataMemory_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DataMemory_stx_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ID_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ID_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopModule_testfixure_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TopModule_testfixure_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TopModule_testfixure_isim_beh.wdb"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="IM_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MemtoReg_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="PCIMID_RFALUDMRF_TopModule_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCIMID_RFALUDMRF_TopModule_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="SE_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopModule_TestFixure_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="TopModule_TestFixure_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="TopModule_TestFixure_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TopModule_testfixure_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="registerfile_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1491256112" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1491256112">
+    <transform xil_pn:end_ts="1492109418" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1492109418">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1491261238" xil_pn:in_ck="-3882368294365439608" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1491261238">
+    <transform xil_pn:end_ts="1492109418" xil_pn:in_ck="4127958243865272648" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492109418">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALUControl.v"/>
@@ -56,22 +65,22 @@
       <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule.v"/>
       <outfile xil_pn:name="Reg2Loc.v"/>
       <outfile xil_pn:name="SE.v"/>
-      <outfile xil_pn:name="TopModule_testfixure.v"/>
+      <outfile xil_pn:name="TopModule_TestFixure.v"/>
       <outfile xil_pn:name="registerfile.v"/>
     </transform>
-    <transform xil_pn:end_ts="1491256112" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3401074783913749214" xil_pn:start_ts="1491256112">
+    <transform xil_pn:end_ts="1492109438" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-3716311068967813918" xil_pn:start_ts="1492109438">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1491256112" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="5545538866752721380" xil_pn:start_ts="1491256112">
+    <transform xil_pn:end_ts="1492109438" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2353778349606005156" xil_pn:start_ts="1492109438">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1491256112" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8337456142484029008" xil_pn:start_ts="1491256112">
+    <transform xil_pn:end_ts="1492109418" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8337456142484029008" xil_pn:start_ts="1492109418">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1491261238" xil_pn:in_ck="-3882368294365439608" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1491261238">
+    <transform xil_pn:end_ts="1492109418" xil_pn:in_ck="4127958243865272648" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492109418">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALUControl.v"/>
@@ -87,23 +96,30 @@
       <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule.v"/>
       <outfile xil_pn:name="Reg2Loc.v"/>
       <outfile xil_pn:name="SE.v"/>
-      <outfile xil_pn:name="TopModule_testfixure.v"/>
+      <outfile xil_pn:name="TopModule_TestFixure.v"/>
       <outfile xil_pn:name="registerfile.v"/>
     </transform>
-    <transform xil_pn:end_ts="1491261241" xil_pn:in_ck="-3882368294365439608" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3347918549397553125" xil_pn:start_ts="1491261238">
+    <transform xil_pn:end_ts="1492109444" xil_pn:in_ck="4127958243865272648" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5801122893138272101" xil_pn:start_ts="1492109438">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="TopModule_testfixure_beh.prj"/>
-      <outfile xil_pn:name="TopModule_testfixure_isim_beh.exe"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TopModule_TestFixure_beh.prj"/>
+      <outfile xil_pn:name="TopModule_TestFixure_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1491261241" xil_pn:in_ck="-5336364524830819690" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3122801569764871352" xil_pn:start_ts="1491261241">
+    <transform xil_pn:end_ts="1492109445" xil_pn:in_ck="8076953793698926560" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5077824393596949816" xil_pn:start_ts="1492109444">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="TopModule_testfixure_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="TopModule_TestFixure_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>

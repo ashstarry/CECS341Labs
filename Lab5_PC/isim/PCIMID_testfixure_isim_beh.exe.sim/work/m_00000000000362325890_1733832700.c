@@ -22,7 +22,7 @@
 #define alloca _alloca
 #endif
 static const char *ng0 = "C:/Users/jvarg/Documents/CECS341Labs/Lab5_PC/PC.v";
-static int ng1[] = {0, 0, 0, 0};
+static int ng1[] = {4, 0, 0, 0};
 
 
 
@@ -95,15 +95,17 @@ LAB4:    xsi_set_current_line(34, ng0);
 
 static void Initial_36_2(char *t0)
 {
-    char *t1;
+    char t1[16];
     char *t2;
+    char *t3;
 
 LAB0:    xsi_set_current_line(36, ng0);
 
 LAB2:    xsi_set_current_line(37, ng0);
-    t1 = ((char*)((ng1)));
-    t2 = (t0 + 1768);
-    xsi_vlogvar_assign_value(t2, t1, 0, 0, 64);
+    t2 = ((char*)((ng1)));
+    xsi_vlog_signed_unary_minus(t1, 64, t2, 32);
+    t3 = (t0 + 1768);
+    xsi_vlogvar_assign_value(t3, t1, 0, 0, 64);
 
 LAB1:    return;
 }

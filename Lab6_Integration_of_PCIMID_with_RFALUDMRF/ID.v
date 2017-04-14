@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module ID(Opcode, Reg2Loc,ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, ALUOp);
+module ID(Opcode, Reg2Loc,ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, Branch, ALUOp);
 
 
 
@@ -29,6 +29,7 @@ output reg MemtoReg;
 output reg RegWrite;
 output reg MemRead;
 output reg MemWrite;
+output reg Branch;
 output reg [1:0] ALUOp;
 
 
@@ -39,32 +40,32 @@ output reg [1:0] ALUOp;
 				case(Opcode)
 				11'b11111000010: begin //load
 									  Reg2Loc <= 0; ALUSrc <=1; MemtoReg <= 1; RegWrite <= 1;
-									  MemRead <= 1; MemWrite <= 0; ALUOp <= 00;
+									  MemRead <= 1; MemWrite <= 0; ALUOp <= 00; Branch <= 0;
 									  end
 				
 				11'b10001011000: begin //RF add
 									  Reg2Loc <= 0; ALUSrc <=0; MemtoReg <= 0; RegWrite <= 1;
-									  MemRead <= 0; MemWrite <= 0; ALUOp <= 10;
+									  MemRead <= 0; MemWrite <= 0; ALUOp <= 10; Branch <= 0;
 									  end
 									  
 				11'b11001011000: begin //RF subtract
 										Reg2Loc <= 0; ALUSrc <=0; MemtoReg <= 0; RegWrite <= 1;
-									  MemRead <= 0; MemWrite <= 0;  ALUOp <= 10;
+									  MemRead <= 0; MemWrite <= 0;  ALUOp <= 10; Branch <= 0;
 									  end
 									  
 				11'b10001010000: begin //RF and 
 									  Reg2Loc <= 0; ALUSrc <=0; MemtoReg <= 0; RegWrite <= 1;
-									  MemRead <= 0; MemWrite <= 0;  ALUOp <= 10;
+									  MemRead <= 0; MemWrite <= 0;  ALUOp <= 10; Branch <= 0;
 									  end
 									  
 				11'b10101010000: begin //RF or
 									  Reg2Loc <= 0; ALUSrc <=0; MemtoReg <= 0; RegWrite <= 1;
-									  MemRead <= 0; MemWrite <= 0; ALUOp <= 10;
+									  MemRead <= 0; MemWrite <= 0; ALUOp <= 10; Branch <= 0;
 									  end
 									  
 				11'b11111000000: begin //Store
-									  Reg2Loc <= 1; ALUSrc <=1; MemtoReg <= 1; RegWrite <= 0;
-										MemRead <=0; MemWrite <= 1; ALUOp <= 00;
+									  Reg2Loc <= 1; ALUSrc <=1; MemtoReg <= 0; RegWrite <= 0;
+										MemRead <=0; MemWrite <= 1; ALUOp <= 00; Branch <= 0;
 									  end
 				 endcase		  
 			

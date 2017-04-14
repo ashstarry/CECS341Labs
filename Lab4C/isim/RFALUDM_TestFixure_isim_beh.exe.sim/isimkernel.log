@@ -2,14 +2,14 @@ Command line:
    RFALUDM_TestFixure_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  50174
+     -socket  60353
 
-Thu Mar 30 15:20:31 2017
+Wed Apr 05 23:53:13 2017
 
 
  Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 387.99 Meg
+ Current Memory Usage: 388.014 Meg
 
  Total Signals          : 75
  Total Nets             : 516
@@ -21,9 +21,9 @@ Thu Mar 30 15:20:31 2017
  Total Scalar Nets and Variables : 5042
 Total Line Count : 129
 
- Total Simulation Time: 0.046875 sec
+ Total Simulation Time: 0.0625 sec
 
- Current Memory Usage: 387.99 Meg
+ Current Memory Usage: 702.595 Meg
 
-Thu Mar 30 15:20:39 2017
+Wed Apr 05 23:53:58 2017
 

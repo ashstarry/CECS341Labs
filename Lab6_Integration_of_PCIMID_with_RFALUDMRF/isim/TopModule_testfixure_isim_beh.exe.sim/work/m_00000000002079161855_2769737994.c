@@ -93,6 +93,6 @@ LAB1:    return;
 extern void work_m_00000000002079161855_2769737994_init()
 {
 	static char *pe[] = {(void *)Cont_26_0};
-	xsi_register_didat("work_m_00000000002079161855_2769737994", "isim/TopModule_testfixure_isim_beh.exe.sim/work/m_00000000002079161855_2769737994.didat");
+	xsi_register_didat("work_m_00000000002079161855_2769737994", "isim/TopModule_TestFixure_isim_beh.exe.sim/work/m_00000000002079161855_2769737994.didat");
 	xsi_register_executes(pe);
 }

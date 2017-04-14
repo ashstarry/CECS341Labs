@@ -32,7 +32,7 @@ reg [63:0] regPC;
 	
 
 		always@(regPC)
-			PCout <= 	regPC;
+			PCout <= regPC;
 	
 
 	

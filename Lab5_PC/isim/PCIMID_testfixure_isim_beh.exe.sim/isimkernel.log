@@ -2,14 +2,14 @@ Command line:
    PCIMID_testfixure_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  54924
+     -socket  52969
 
-Mon Mar 27 22:57:33 2017
+Tue Apr 04 11:30:00 2017
 
 
- Elaboration Time: 0.015625 sec
+ Elaboration Time: 0.078125 sec
 
- Current Memory Usage: 388.317 Meg
+ Current Memory Usage: 387.916 Meg
 
  Total Signals          : 19
  Total Nets             : 142
@@ -21,10 +21,11 @@ Mon Mar 27 22:57:33 2017
  Total Scalar Nets and Variables : 415
 Total Line Count : 38
 Total Line Count : 38
+Total Line Count : 38
 
- Total Simulation Time: 0.03125 sec
+ Total Simulation Time: 0.171875 sec
 
- Current Memory Usage: 702.898 Meg
+ Current Memory Usage: 545.206 Meg
 
-Mon Mar 27 23:02:22 2017
+Tue Apr 04 14:16:30 2017
 

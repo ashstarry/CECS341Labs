@@ -35,7 +35,7 @@ static int ng10[] = {7, 0};
 static unsigned int ng11[] = {5968U, 0U};
 static int ng12[] = {12, 0};
 static int ng13[] = {15, 0};
-static unsigned int ng14[] = {3U, 0U};
+static unsigned int ng14[] = {0U, 0U};
 
 
 
@@ -201,6 +201,6 @@ LAB6:    xsi_set_current_line(40, ng0);
 extern void work_m_00000000001382016704_4231019343_init()
 {
 	static char *pe[] = {(void *)Always_27_0,(void *)Always_38_1};
-	xsi_register_didat("work_m_00000000001382016704_4231019343", "isim/TopModule_testfixure_isim_beh.exe.sim/work/m_00000000001382016704_4231019343.didat");
+	xsi_register_didat("work_m_00000000001382016704_4231019343", "isim/TopModule_TestFixure_isim_beh.exe.sim/work/m_00000000001382016704_4231019343.didat");
 	xsi_register_executes(pe);
 }

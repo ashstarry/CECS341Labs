@@ -27,8 +27,8 @@ module MemtoReg(
 	 
 	 always @ (DMIn,ALUIn,Select)
 		case(Select)
-			0: ToRegOut <= DMIn;
-			1: ToRegOut <= ALUIn;
+			1: ToRegOut <= DMIn;
+			0: ToRegOut <= ALUIn;
 		endcase
 
 endmodule

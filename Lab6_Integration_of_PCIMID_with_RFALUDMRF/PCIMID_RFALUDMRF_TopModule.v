@@ -18,15 +18,11 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PCIMID_RFALUDMRF_TopModule(PC_Clock,RF_Clock,DM_Clock, Zero);
+module PCIMID_RFALUDMRF_TopModule(Clock, Branch, Zero);
 
-      input PC_Clock;
-		input RF_Clock;
-		input DM_Clock;
-
-	
-		
+     input Clock;
 	  output Zero;
+	  output Branch;
 	  
 	   //Control wires
 		wire Reg2Loc_Select;
@@ -60,11 +56,11 @@ module PCIMID_RFALUDMRF_TopModule(PC_Clock,RF_Clock,DM_Clock, Zero);
 									  
 						  PC  PC (.PCin(        AdderOut           ), //pc module, adderout wire
 									 .PCout(       PCout              ), 
-									 .Clock(       PC_Clock          )       
+									 .Clock(       Clock              )       
 									 );
 									 
 						  IM   IM(.Pc(          PCout              ), //instruction module, pc out wire
-									 .InstrOut(     InstrOut          )    
+									 .InstrOut(    InstrOut           )    
 									 );
 									
 						  ID   ID(.Opcode(      InstrOut [31:21]   ), // CONNTROL MODULE = instruction decoder (Control), instruc out wire
@@ -74,7 +70,8 @@ module PCIMID_RFALUDMRF_TopModule(PC_Clock,RF_Clock,DM_Clock, Zero);
 									.RegWrite(     RegWrite           ), 
 									.MemRead(      MemRead            ), 
 									.MemWrite(     MemWrite           ),
-									.ALUOp(        ALUOp              )
+									.ALUOp(        ALUOp              ),
+									.Branch(       Branch             )
 									 );
 									 
 									 
@@ -84,30 +81,30 @@ module PCIMID_RFALUDMRF_TopModule(PC_Clock,RF_Clock,DM_Clock, Zero);
 									.WriteReg(     InstrOut [4:0]     ), //rt
 									.WriteData(    ToRegOut           ), 
 									.RegWrite(     RegWrite           ), 
-									.clock(        RF_Clock           ), 
+									.clock(        Clock              ), 
 									.Data1(        A                  ), 
 									.Data2(        ReadData2Out       )
 									);
 									
-		 	            SE SE(.SEin(         InstrOut [20:12]   ), //sign extender
-		                     .SEout(        SEout              )
+		 	            SE SE(.SEin(          InstrOut [20:12]   ), //sign extender
+		                     .SEout(         SEout              )
 									);
 									
-      ALUwithControl Lab2c(.ALUOp(        ALUOp              ), //alu with control
+      ALUwithControl Lab2c(.ALUOp(         ALUOp              ), //alu with control
 		                     .OpCodefield(   InstrOut [31:21]  ), 
-									.A(            A                  ), 
-									.B(            SrcOut             ), 
-									.ALUresult(    ALUresult          ), 
-									.Zero(         Zero               ), 
-									.ALUoperation( ALUoperation       )
+									.A(             A                  ), 
+									.B(             SrcOut             ), 
+									.ALUresult(     ALUresult          ), 
+									.Zero(          Zero               ), 
+									.ALUoperation(  ALUoperation       )
 									);
 	
-		       DataMemory DM(.Address(      ALUresult          ), //data memory
-		                     .clock(        DM_clockero           ), 
-									.MemRead(      MemRead            ), 
-									.MemWrite(     MemWrite           ),
-		                     .WriteData(    ReadData2Out       ), 
-									.ReadData(     ReadData           )
+		       DataMemory DM(.Address(       ALUresult          ), //data memory
+		                     .clock(         Clock              ), 
+									.MemRead(       MemRead            ), 
+									.MemWrite(      MemWrite           ),
+		                     .WriteData(     ReadData2Out       ), 
+									.ReadData(      ReadData           )
 									);
 		
 	               

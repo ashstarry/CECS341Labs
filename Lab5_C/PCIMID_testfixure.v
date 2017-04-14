@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   16:00:08 03/30/2017
+// Create Date:   11:26:57 04/04/2017
 // Design Name:   PCIMID
 // Module Name:   C:/Users/jvarg/Documents/CECS341Labs/Lab5_C/PCIMID_testfixure.v
 // Project Name:  Lab5_C
@@ -35,6 +35,7 @@ module PCIMID_testfixure;
 	wire MemRead;
 	wire MemWrite;
 	wire [1:0] ALUOp;
+	wire Branch;
 
 	// Instantiate the Unit Under Test (UUT)
 	PCIMID uut (
@@ -45,45 +46,38 @@ module PCIMID_testfixure;
 		.RegWrite(RegWrite), 
 		.MemRead(MemRead), 
 		.MemWrite(MemWrite), 
-		.ALUOp(ALUOp)
+		.ALUOp(ALUOp), 
+		.Branch(Branch)
 	);
 
 	initial begin
 		// Initialize Inputs
 		Clock = 0;
-		
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-		#50; Clock = 1;
-	   #50; Clock = 0;
-			#50; Clock = 1;
-	   #50; Clock = 0;
-		
 
-        
-		// Add stimulus here
+				Clock = 0;
+		
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+	   #50; Clock = 0;
+		#50; Clock = 1;
+		#50; Clock = 0;
+		
+		
+		$stop;
+		
 
 	end
       

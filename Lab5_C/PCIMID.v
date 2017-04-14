@@ -18,7 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PCIMID(Clock, Reg2Loc,ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, ALUOp);
+module PCIMID(Clock, Reg2Loc,ALUSrc, MemtoReg, RegWrite, MemRead, MemWrite, ALUOp, Branch);
 
 input Clock;
 
@@ -31,6 +31,7 @@ output MemtoReg;
 output RegWrite;
 output MemRead;
 output MemWrite;
+output Branch;
 output [1:0] ALUOp;
 
 wire [31:0]  InstrOut;
@@ -65,6 +66,7 @@ wire  [63:0] PCout;
 								.RegWrite(   RegWrite        ), 
 			               .MemRead(    MemRead         ), 
 								.MemWrite(   MemWrite        ),
-								.ALUOp(      ALUOp           )
+								.ALUOp(      ALUOp           ),
+								 .Branch(    Branch          ) 
 								 );
 endmodule

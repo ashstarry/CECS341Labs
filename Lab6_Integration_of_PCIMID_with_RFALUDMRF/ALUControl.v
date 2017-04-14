@@ -37,7 +37,7 @@ module ALUControl(
 		
 	always @(ALUOp)
 		case(ALUOp)
-		2'b11: ALUoperation <= 2;
+		2'b00: ALUoperation <= 2;
 	endcase
 
 endmodule
