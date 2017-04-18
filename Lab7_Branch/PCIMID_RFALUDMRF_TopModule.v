@@ -41,14 +41,17 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 		wire [63:0] A;
 		wire [63:0] SrcOut;	//	 ALUSrc;
 		wire [63:0] ReadData;
-		wire [63:0] SEout;
+		wire [63:0] SEout; //sign extender wire to shift left 2
 		wire [63:0] ALUresult;
 		wire [3:0]  ALUoperation;
 		wire [63:0] ToRegOut;
 		wire [63:0] ReadData2Out;
 		wire [4:0]  rrA2Out;
 		wire PcSrc_Out;
+		wire BranchAdder_Result;
 		wire [63:0] PCSrc; //PC mux
+		wire SL2_Out;//shift left 2 outout wire
+		wire PcSrc_Out;
 		//and wires
 	
       wire Branch;
@@ -58,7 +61,7 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 									  .out(        AdderOut           ) //adderout wire
 									 );
 									  
-						  PC  PC (.PCin(        AdderOut           ), //pc module, adderout wire
+						  PC  PC (.PCin(     PcSrc_Out             ), //pc module, adderout wire
 									 .PCout(       PCout              ), 
 									 .Clock(       Clock              )       
 									 );
@@ -111,18 +114,27 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 									.ReadData(      ReadData           )
 									);
 		//lab7
-		gate1      lab7(   .PCSrc(           PCSrc              ), //output
+		gate1      lab7(   .PCSrc(           PCSrc              ), //output//And Gate
 								 .Zero(            Zero               ), 
 								 .Branch(          Branch             )                            
 								 );
 	               
-					
+    Adder_Branch   Adder_Branch(.A(      PCout                ), //Branch Adder
+								  .B(           SL2_Out               ), 
+								  .out(   BranchAdder_Result          )
+								  );
+								  
+			
+	ShiftLeft2   ShiftLeft2(.in(          SEout     [63:18]    ),//shift left 2
+									.out(        SL2_Out               )
+									);			
+								  
 				//MUXES	
 
 
-	PCSrc_Mux    PCSrc_Mux (.Pc_Add(        AdderOut           ),
-				               .ALu_Add(                          ),
-									.PcSrc_Out(                        ),		
+	PCSrc_Mux    PCSrc_Mux (.Pc_Add(        AdderOut           ),//Branch mux
+				               .ALu_Add(      BranchAdder_Result  ),
+									.PcSrc_Out(      PcSrc_Out         ),		
                            .PcSrc_Select(  PCSrc              )										
 				               );
 
@@ -144,15 +156,15 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 									.Select(       Reg2Loc_Select     ), 
 									.rrA2Out(      rrA2Out            )
 									);
-			//
+		
 			
-			//shift left 2
 			
-			//Add
 			
-			//Mux
 			
-			//And Gate
+			
+			
+			
+			
 	
 
 endmodule
