@@ -51,7 +51,7 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 		wire BranchAdder_Result;
 		wire [63:0] PCSrc; //PC mux
 		wire SL2_Out;//shift left 2 outout wire
-		wire PcSrc_Out;
+		wire  PCSrc_Select; 
 		//and wires
 	
       wire Branch;
@@ -93,7 +93,7 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 									.Data2(        ReadData2Out       )
 									);
 									
-		 	            SE SE(.SEin(          InstrOut [20:12]   ), //sign extender
+		 	            SE SE(.SEin(          InstrOut [32:0]   ), //sign extender
 		                     .SEout(         SEout              )
 									);
 									
@@ -114,41 +114,40 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 									.ReadData(      ReadData           )
 									);
 		//lab7
-		gate1      lab7(   .PCSrc(           PCSrc              ), //output//And Gate
-								 .Zero(            Zero               ), 
-								 .Branch(          Branch             )                            
+	
+		gate1      gate1(   .PCSrc_out(           PCSrc_Select              ), //select output//And Gate
+								 .Zero_in(            Zero               ), 
+								 .Branch_in(          Branch             )                            
 								 );
 	               
     Adder_Branch   Adder_Branch(.A(      PCout                ), //Branch Adder
 								  .B(           SL2_Out               ), 
 								  .out(   BranchAdder_Result          )
 								  );
-								  
-			
-	ShiftLeft2   ShiftLeft2(.in(          SEout     [63:18]    ),//shift left 2
-									.out(        SL2_Out               )
-									);			
-								  
-				//MUXES	
-
-
+					  
+		
+  	Shift_L2   Shift_L2(.in(         SEout  [63:18]            ),
+										  .out(   SL2_Out               )
+										  );
+										  
+										  
 	PCSrc_Mux    PCSrc_Mux (.Pc_Add(        AdderOut           ),//Branch mux
 				               .ALu_Add(      BranchAdder_Result  ),
 									.PcSrc_Out(      PcSrc_Out         ),		
-                           .PcSrc_Select(  PCSrc              )										
+                           .PcSrc_Select(  PCSrc_select              )										
 				               );
 
 				
-				 ALUSrc ALUSrc(.RegIn(        ReadData2Out       ), //alu source  MUX
-								   .DispIn(       SEout              ), 
-								   .Select(       ALUSrc_Select      ), 
-								   .SrcOut(       SrcOut             )
+				 ALUSrc ALUSrc(.RegIn(        ReadData2Out        ), //alu source  MUX
+								   .DispIn(       SEout               ), 
+								   .Select(       ALUSrc_Select       ), 
+								   .SrcOut(       SrcOut              )
 									);
 									
-		   MemtoReg MemtoReg(.DMIn(         ReadData           ), //mem to reg  MUX 
-			                  .ALUIn(        ALUresult          ), 
-									.Select(       MemtoReg_Select    ), 
-									.ToRegOut(     ToRegOut           )
+		   MemtoReg MemtoReg(.DMIn(         ReadData            ), //mem to reg  MUX 
+			                  .ALUIn(        ALUresult           ), 
+									.Select(       MemtoReg_Select     ), 
+									.ToRegOut(     ToRegOut            )
 									);
 	
 		     Reg2Loc Reg2Loc(.RmIn(         InstrOut [20:16]   ), // reg, Rm        MUX

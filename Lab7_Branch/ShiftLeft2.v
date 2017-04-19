@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    20:50:17 04/17/2017 
+// Create Date:    21:04:56 04/17/2017 
 // Design Name: 
 // Module Name:    ShiftLeft2 
 // Project Name: 
@@ -19,9 +19,6 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ShiftLeft2(in, out);
-	input in;
-	output reg out;
-	
-	out = 2<< in;
+
 
 endmodule

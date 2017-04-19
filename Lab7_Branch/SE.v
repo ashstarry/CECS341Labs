@@ -18,11 +18,15 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module SE(
-	input [8:0]SEin,
-	output [63:0] SEout
-    );
-	 
-	assign SEout = {{55{SEin[8]}}, SEin};
-
+module SE(SEin, SEout);
+		input [31:0]SEin;
+	   output [63:0] SEout;
+		
+		
+		always @(SEin)
+			case(SEin [31:24])
+			 8'b10110100: SEOut = {{ 45{SEin[23]}}, SEin[23:5]};
+			default SEout = {{55{SEin[20]}}, SEin[20:12]};
+		endcase
+		
 endmodule

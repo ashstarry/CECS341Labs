@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date:    15:46:09 04/17/2017 
+// Create Date:    08:34:46 04/18/2017 
 // Design Name: 
-// Module Name:    PCSrc_Mux 
+// Module Name:    Shift_L2 
 // Project Name: 
 // Target Devices: 
 // Tool versions: 
@@ -18,18 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PCSrc_Mux(Pc_Add, ALu_Add, PcSrc_Out, PcSrc_Select );
-	input Pc_Add,
-	input ALu_Add,
-	input PcSrc_Select,
-	output PcSrc_Out;
-    
-	 
-	 always @ (RegIn,DispIn,Select)
-		case(PcSrc_Select)
-			0: SrcOut <= RegIn;
-			1: SrcOut <= DispIn;
-		endcase
+module Shift_L2(in, out );
+
+input [63:0] in;
+output [63:0]out;
 
 
-endmodule 
+ assign out = in << 2;
+
+
+
+endmodule
