@@ -21,8 +21,167 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Lab7_Branch.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AdderPCout_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="DataMemory_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Lab7_TestFixure_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="MemtoReg_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="PCIMID_RFALUDMRF_TopModule.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="PCIMID_RFALUDMRF_TopModule.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCIMID_RFALUDMRF_TopModule.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="PCIMID_RFALUDMRF_TopModule.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="PCIMID_RFALUDMRF_TopModule.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="PCIMID_RFALUDMRF_TopModule.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCIMID_RFALUDMRF_TopModule_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="PCIMID_RFALUDMRF_TopModule_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="PCIMID_RFALUDMRF_TopModule_summary.html"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="PCIMID_RFALUDMRF_TopModule_xst.xrpt"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="Shift_L2_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lab7_TestFixure_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="lab7_TestFixure_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="lab7_TestFixure_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1492661774" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1492661774">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661774" xil_pn:in_ck="-107874236576306306" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492661774">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALUControl.v"/>
+      <outfile xil_pn:name="ALUSrc.v"/>
+      <outfile xil_pn:name="ALUwithControl.v"/>
+      <outfile xil_pn:name="AdderPCout.v"/>
+      <outfile xil_pn:name="AdderSE.v"/>
+      <outfile xil_pn:name="DataMemory.v"/>
+      <outfile xil_pn:name="ID.v"/>
+      <outfile xil_pn:name="IM.v"/>
+      <outfile xil_pn:name="LEGv8.v"/>
+      <outfile xil_pn:name="MemtoReg.v"/>
+      <outfile xil_pn:name="PC.v"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule.v"/>
+      <outfile xil_pn:name="PCSrc_Mux.v"/>
+      <outfile xil_pn:name="Reg2Loc.v"/>
+      <outfile xil_pn:name="SE.v"/>
+      <outfile xil_pn:name="Shift_L2.v"/>
+      <outfile xil_pn:name="gate1.v"/>
+      <outfile xil_pn:name="lab7_TestFixure.v"/>
+      <outfile xil_pn:name="registerfile.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661774" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="4389945014892694735" xil_pn:start_ts="1492661774">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661774" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="6314028815584502481" xil_pn:start_ts="1492661774">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661774" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="8337456142484029008" xil_pn:start_ts="1492661774">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661774" xil_pn:in_ck="-107874236576306306" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492661774">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALUControl.v"/>
+      <outfile xil_pn:name="ALUSrc.v"/>
+      <outfile xil_pn:name="ALUwithControl.v"/>
+      <outfile xil_pn:name="AdderPCout.v"/>
+      <outfile xil_pn:name="AdderSE.v"/>
+      <outfile xil_pn:name="DataMemory.v"/>
+      <outfile xil_pn:name="ID.v"/>
+      <outfile xil_pn:name="IM.v"/>
+      <outfile xil_pn:name="LEGv8.v"/>
+      <outfile xil_pn:name="MemtoReg.v"/>
+      <outfile xil_pn:name="PC.v"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule.v"/>
+      <outfile xil_pn:name="PCSrc_Mux.v"/>
+      <outfile xil_pn:name="Reg2Loc.v"/>
+      <outfile xil_pn:name="SE.v"/>
+      <outfile xil_pn:name="Shift_L2.v"/>
+      <outfile xil_pn:name="gate1.v"/>
+      <outfile xil_pn:name="lab7_TestFixure.v"/>
+      <outfile xil_pn:name="registerfile.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661778" xil_pn:in_ck="-107874236576306306" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-5330774109642616385" xil_pn:start_ts="1492661774">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="lab7_TestFixure_beh.prj"/>
+      <outfile xil_pn:name="lab7_TestFixure_isim_beh.exe"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661779" xil_pn:in_ck="2256620720542128962" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="9220659672159538146" xil_pn:start_ts="1492661778">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="lab7_TestFixure_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661595" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1492661595">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661595" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="7594280116895348425" xil_pn:start_ts="1492661595">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661595" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="8337456142484029008" xil_pn:start_ts="1492661595">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661595" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1492661595">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661595" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="8709309319186023175" xil_pn:start_ts="1492661595">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661595" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-3893270297158069842" xil_pn:start_ts="1492661595">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661595" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-5302773752331232806" xil_pn:start_ts="1492661595">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661647" xil_pn:in_ck="2951485329411176258" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3493233848541868419" xil_pn:start_ts="1492661643">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name=".lso"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule.lso"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule.prj"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule.syr"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule.xst"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule_beh.prj"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule_stx_beh.prj"/>
+      <outfile xil_pn:name="PCIMID_RFALUDMRF_TopModule_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1492661647" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1999895355207168818" xil_pn:start_ts="1492661647">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:name="TRAN_postSynthesisSimModel">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="NotReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>

@@ -18,17 +18,17 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module PCSrc_Mux(Pc_Add, ALu_Add, PcSrc_Out, PcSrc_Select );
-	input Pc_Add,
-	input ALu_Add,
-	input PcSrc_Select,
-	output PcSrc_Out;
+module PCSrc_Mux(Pc_Add, ALu_Add,  PcSrc_Select, PcSrc_Out );
+	input [63:0] Pc_Add;
+	input [63:0] ALu_Add;
+	input PcSrc_Select;
+	output reg [63:0] PcSrc_Out;
     
 	 
-	 always @ (RegIn,DispIn,Select)
+	 always @ ( Pc_Add, ALu_Add,PcSrc_Select)
 		case(PcSrc_Select)
-			0: SrcOut <= RegIn;
-			1: SrcOut <= DispIn;
+			0: PcSrc_Out <= Pc_Add;
+			1: PcSrc_Out <= ALu_Add;
 		endcase
 
 

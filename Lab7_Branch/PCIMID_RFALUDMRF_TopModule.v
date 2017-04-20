@@ -47,10 +47,10 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 		wire [63:0] ToRegOut;
 		wire [63:0] ReadData2Out;
 		wire [4:0]  rrA2Out;
-		wire PcSrc_Out;
-		wire BranchAdder_Result;
+		wire [63:0] PcSrc_Out;
+		wire [63:0]BranchAdder_Result;
 		wire [63:0] PCSrc; //PC mux
-		wire SL2_Out;//shift left 2 outout wire
+		wire [63:0]SL2_Out;//shift left 2 outout wire
 		wire  PCSrc_Select; 
 		//and wires
 	
@@ -93,7 +93,7 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 									.Data2(        ReadData2Out       )
 									);
 									
-		 	            SE SE(.SEin(          InstrOut [32:0]   ), //sign extender
+		 	            SE SE(.SEin(          InstrOut    ), //sign extender
 		                     .SEout(         SEout              )
 									);
 									
@@ -115,9 +115,11 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 									);
 		//lab7
 	
-		gate1      gate1(   .PCSrc_out(           PCSrc_Select              ), //select output//And Gate
-								 .Zero_in(            Zero               ), 
-								 .Branch_in(          Branch             )                            
+		gate1      gate1(    //select output//And Gate
+								 .Branch_in(        Branch            ), 
+								 .Zero_in(          Zero              ), 
+								 .PCSrc_out(        PCSrc_Select      )
+								 
 								 );
 	               
     Adder_Branch   Adder_Branch(.A(      PCout                ), //Branch Adder
@@ -126,15 +128,15 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 								  );
 					  
 		
-  	Shift_L2   Shift_L2(.in(         SEout  [63:18]            ),
-										  .out(   SL2_Out               )
-										  );
+  	Shift_L2   Shift_L2(.in(             SEout                 ),
+							 .out(             SL2_Out               )
+							     );
 										  
 										  
 	PCSrc_Mux    PCSrc_Mux (.Pc_Add(        AdderOut           ),//Branch mux
 				               .ALu_Add(      BranchAdder_Result  ),
-									.PcSrc_Out(      PcSrc_Out         ),		
-                           .PcSrc_Select(  PCSrc_select              )										
+                           .PcSrc_Select(  PCSrc_select       ),	
+									.PcSrc_Out(      PcSrc_Out         )	
 				               );
 
 				

@@ -1,0 +1,53 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/lab7_TestFixure_isim_beh.exe -prj C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/lab7_TestFixure_beh.prj work.lab7_TestFixure work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/LEGv8.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/ALUControl.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/Shift_L2.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/SE.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/registerfile.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/Reg2Loc.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/PCSrc_Mux.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/PC.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/MemtoReg.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/IM.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/ID.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/gate1.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/DataMemory.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/ALUwithControl.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/ALUSrc.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/AdderSE.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/AdderPCout.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/PCIMID_RFALUDMRF_TopModule.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/lab7_TestFixure.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module AdderPCout
+Compiling module PC
+Compiling module IM
+Compiling module ID
+Compiling module registerfile
+Compiling module SE
+Compiling module ALUControl
+Compiling module LEGv8
+Compiling module ALUwithControl
+Compiling module DataMemory
+Compiling module gate1
+Compiling module Adder_Branch
+Compiling module Shift_L2
+Compiling module PCSrc_Mux
+Compiling module ALUSrc
+Compiling module MemtoReg
+Compiling module Reg2Loc
+Compiling module PCIMID_RFALUDMRF_TopModule
+Compiling module lab7_TestFixure
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 13 sub-compilation(s) to finish...
+Compiled 20 Verilog Units
+Built simulation executable C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/lab7_TestFixure_isim_beh.exe
+Fuse Memory Usage: 28996 KB
+Fuse CPU Usage: 624 ms

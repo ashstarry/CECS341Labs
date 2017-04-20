@@ -74,35 +74,25 @@ module DataMemory(
 	 DM[4] = 8'h00;
 	 DM[5] = 8'h00;
 	 DM[6] = 8'h00;
-	 DM[7] = 8'h00;
 	 
-	 	 
-	 DM[8] = 8'h00;
-	 DM[9] = 8'h00;
-	 DM[10] = 8'h00;
-	 DM[11] = 8'h00;
-	 DM[12] = 8'h00;
-	 DM[13] = 8'h00;
-	 DM[14] = 8'h00;
-	 DM[15] = 8'h32;
 	 
-	 DM[40] = 8'h00;
-	 DM[41] = 8'h00;
-	 DM[42] = 8'h00;
-	 DM[43] = 8'h00;
-	 DM[44] = 8'h00;
-	 DM[45] = 8'h00;
-	 DM[46] = 8'h00;
-	 DM[47] = 8'h64;//initialize to decimal number 2
+	 DM[40] = 8'h55;
+	 DM[41] = 8'h55;
+	 DM[42] = 8'h55;
+	 DM[43] = 8'h55;
+	 DM[44] = 8'h55;
+	 DM[45] = 8'h55;
+	 DM[46] = 8'h55;
+	 DM[47] = 8'h55;
 	 
-	 DM[80] = 8'h00;
-	 DM[81] = 8'h00;
-	 DM[82] = 8'h00;
-	 DM[83] = 8'h00;
-	 DM[84] = 8'h00;
-	 DM[85] = 8'h00;
-	 DM[86] = 8'h01;
-	 DM[87] = 8'h28;//initialize to decimal number 3
+	 DM[80] = 8'haa;
+	 DM[81] = 8'haa;
+	 DM[82] = 8'haa;
+	 DM[83] = 8'haa;
+	 DM[84] = 8'haa;
+	 DM[85] = 8'haa;
+	 DM[86] = 8'haa;
+	 DM[87] = 8'haa;
 	 
 	 end
 
