@@ -1,29 +1,10 @@
 Command line:
-   lab7_TestFixure_isim_beh.exe
+   Lab7_TestFixure_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  61020
+     -socket  65260
 
-Wed Apr 19 21:16:20 2017
+Thu Apr 20 13:32:44 2017
 
 
- Elaboration Time: 0.046875 sec
-
- Current Memory Usage: 392.151 Meg
-
- Total Signals          : 94
- Total Nets             : 899
- Total Signal Drivers   : 31
- Total Blocks           : 20
- Total Primitive Blocks : 17
- Total Processes        : 55
- Total Traceable Variables  : 45
- Total Scalar Nets and Variables : 7798
-Total Line Count : 224
-
- Total Simulation Time: 0.0625 sec
-
- Current Memory Usage: 392.151 Meg
-
-Wed Apr 19 21:16:50 2017
-
+ Elaboration Time: 0.109375 sec

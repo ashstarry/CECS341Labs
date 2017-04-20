@@ -90,6 +90,6 @@ LAB8:    xsi_set_current_line(31, ng0);
 extern void work_m_00000000002769649878_0398127264_init()
 {
 	static char *pe[] = {(void *)Always_28_0};
-	xsi_register_didat("work_m_00000000002769649878_0398127264", "isim/lab7_TestFixure_isim_beh.exe.sim/work/m_00000000002769649878_0398127264.didat");
+	xsi_register_didat("work_m_00000000002769649878_0398127264", "isim/Lab7_TestFixure_isim_beh.exe.sim/work/m_00000000002769649878_0398127264.didat");
 	xsi_register_executes(pe);
 }

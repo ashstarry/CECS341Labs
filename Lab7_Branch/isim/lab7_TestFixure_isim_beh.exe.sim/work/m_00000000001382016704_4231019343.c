@@ -36,6 +36,7 @@ static unsigned int ng11[] = {5968U, 0U};
 static int ng12[] = {12, 0};
 static int ng13[] = {15, 0};
 static unsigned int ng14[] = {0U, 0U};
+static unsigned int ng15[] = {1U, 0U};
 
 
 
@@ -186,14 +187,25 @@ LAB5:    t4 = ((char*)((ng14)));
     if (t6 == 1)
         goto LAB6;
 
-LAB7:
-LAB8:    goto LAB2;
+LAB7:    t2 = ((char*)((ng15)));
+    t6 = xsi_vlog_unsigned_case_compare(t5, 2, t2, 2);
+    if (t6 == 1)
+        goto LAB8;
+
+LAB9:
+LAB10:    goto LAB2;
 
 LAB6:    xsi_set_current_line(40, ng0);
     t7 = ((char*)((ng6)));
     t8 = (t0 + 1608);
     xsi_vlogvar_wait_assign_value(t8, t7, 0, 0, 4, 0LL);
-    goto LAB8;
+    goto LAB10;
+
+LAB8:    xsi_set_current_line(41, ng0);
+    t3 = ((char*)((ng10)));
+    t4 = (t0 + 1608);
+    xsi_vlogvar_wait_assign_value(t4, t3, 0, 0, 4, 0LL);
+    goto LAB10;
 
 }
 
@@ -201,6 +213,6 @@ LAB6:    xsi_set_current_line(40, ng0);
 extern void work_m_00000000001382016704_4231019343_init()
 {
 	static char *pe[] = {(void *)Always_27_0,(void *)Always_38_1};
-	xsi_register_didat("work_m_00000000001382016704_4231019343", "isim/lab7_TestFixure_isim_beh.exe.sim/work/m_00000000001382016704_4231019343.didat");
+	xsi_register_didat("work_m_00000000001382016704_4231019343", "isim/Lab7_TestFixure_isim_beh.exe.sim/work/m_00000000001382016704_4231019343.didat");
 	xsi_register_executes(pe);
 }

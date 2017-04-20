@@ -2,14 +2,14 @@ Command line:
    TopModule_TestFixure_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51560
+     -socket  63352
 
-Thu Apr 13 11:50:47 2017
+Thu Apr 20 08:21:04 2017
 
 
- Elaboration Time: 0.078125 sec
+ Elaboration Time: 0.125 sec
 
- Current Memory Usage: 383.803 Meg
+ Current Memory Usage: 387.994 Meg
 
  Total Signals          : 79
  Total Nets             : 641
@@ -21,9 +21,9 @@ Thu Apr 13 11:50:47 2017
  Total Scalar Nets and Variables : 7412
 Total Line Count : 184
 
- Total Simulation Time: 0.109375 sec
+ Total Simulation Time: 0.140625 sec
 
- Current Memory Usage: 855.675 Meg
+ Current Memory Usage: 387.994 Meg
 
-Thu Apr 13 12:34:14 2017
+Thu Apr 20 08:21:12 2017
 

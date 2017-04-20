@@ -127,15 +127,7 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Branch, Zero);
 									.Select(       Reg2Loc_Select     ), 
 									.rrA2Out(      rrA2Out            )
 									);
-			//missing modules for branch instructions
 			
-			//shift left 2
-			
-			//Add
-			
-			//Mux
-			
-			//And Gate
 	
 
 endmodule

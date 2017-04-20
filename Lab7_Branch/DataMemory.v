@@ -75,7 +75,6 @@ module DataMemory(
 	 DM[5] = 8'h00;
 	 DM[6] = 8'h00;
 	 
-	 
 	 DM[40] = 8'h55;
 	 DM[41] = 8'h55;
 	 DM[42] = 8'h55;

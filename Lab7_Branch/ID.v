@@ -37,6 +37,7 @@ output reg [1:0] ALUOp;
 //4 R type opcodes
 //one STUR Opcode
 	always @(Opcode)
+	begin
 				case(Opcode)
 				11'b11111000010: begin //load
 									  Reg2Loc <= 0; ALUSrc <=1; MemtoReg <= 1; RegWrite <= 1;
@@ -68,13 +69,17 @@ output reg [1:0] ALUOp;
 										MemRead <=0; MemWrite <= 1; ALUOp <= 00; Branch <= 0;
 									  end
 									  
-				8'b10110100:    begin//branch
-									  	Reg2Loc <= 1; ALUSrc <=0; MemtoReg <= 0; RegWrite <= 0;
+				endcase					  
+								case(Opcode [10:3])				  
+										8'b10110100:  begin//branch
+									  	Reg2Loc <= 1; ALUSrc <=0; MemtoReg <= 1; RegWrite <= 0;
 										MemRead <=0; MemWrite <= 0; ALUOp <= 01; Branch <= 1;
 										end
-				 endcase		  
+										
+									endcase		  
+ end
 
-
+		
 	
 
 			

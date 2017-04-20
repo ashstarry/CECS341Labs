@@ -1,27 +1,8 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    10:31:37 03/31/2017 
-// Design Name: 
-// Module Name:    PCIMID_RFALUDMRF_TopModule 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
-module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
+module PCIMID_RFALUDMRF_TopModule(Clock);
 
      input Clock;
-	  output Zero;
+	
 	  
 	  
 	   //Control wires
@@ -32,7 +13,8 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 		wire MemWrite;
 		wire ALUSrc_Select;
 		wire RegWrite;
-		
+		wire  PCSrc_Select; 
+		wire Zero;
       //Instruction memory wires		
 		wire [31:0] InstrOut;
 		wire [63:0] AdderOut;
@@ -51,7 +33,7 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 		wire [63:0]BranchAdder_Result;
 		wire [63:0] PCSrc; //PC mux
 		wire [63:0]SL2_Out;//shift left 2 outout wire
-		wire  PCSrc_Select; 
+
 		//and wires
 	
       wire Branch;
@@ -118,7 +100,7 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 		gate1      gate1(    //select output//And Gate
 								 .Branch_in(        Branch            ), 
 								 .Zero_in(          Zero              ), 
-								 .PCSrc_out(        PCSrc_Select      )
+								 .PCSrc_out(       PCSrc_Select       )
 								 
 								 );
 	               
@@ -135,7 +117,7 @@ module PCIMID_RFALUDMRF_TopModule(Clock, Zero);
 										  
 	PCSrc_Mux    PCSrc_Mux (.Pc_Add(        AdderOut           ),//Branch mux
 				               .ALu_Add(      BranchAdder_Result  ),
-                           .PcSrc_Select(  PCSrc_select       ),	
+                           .PcSrc_Select( PCSrc_Select    ),	
 									.PcSrc_Out(      PcSrc_Out         )	
 				               );
 

@@ -25,7 +25,7 @@ static const char *ng0 = "C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/gate1
 
 
 
-static void Cont_25_0(char *t0)
+static void Cont_6_0(char *t0)
 {
     char t5[8];
     char *t1;
@@ -84,7 +84,7 @@ LAB0:    t1 = (t0 + 2528U);
 
 LAB3:    goto *t2;
 
-LAB2:    xsi_set_current_line(25, ng0);
+LAB2:    xsi_set_current_line(6, ng0);
     t2 = (t0 + 1048U);
     t3 = *((char **)t2);
     t2 = (t0 + 1208U);
@@ -161,7 +161,7 @@ LAB4:    t16 = *((unsigned int *)t5);
 
 extern void work_m_00000000002533781646_2059725599_init()
 {
-	static char *pe[] = {(void *)Cont_25_0};
-	xsi_register_didat("work_m_00000000002533781646_2059725599", "isim/lab7_TestFixure_isim_beh.exe.sim/work/m_00000000002533781646_2059725599.didat");
+	static char *pe[] = {(void *)Cont_6_0};
+	xsi_register_didat("work_m_00000000002533781646_2059725599", "isim/Lab7_TestFixure_isim_beh.exe.sim/work/m_00000000002533781646_2059725599.didat");
 	xsi_register_executes(pe);
 }

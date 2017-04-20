@@ -4,9 +4,9 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   20:22:07 04/19/2017
+// Create Date:   11:54:12 04/20/2017
 // Design Name:   PCIMID_RFALUDMRF_TopModule
-// Module Name:   C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/lab7_TestFixure.v
+// Module Name:   C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/Lab7_TestFixure.v
 // Project Name:  Lab7_Branch
 // Target Device:  
 // Tool versions:  
@@ -22,43 +22,41 @@
 // 
 ////////////////////////////////////////////////////////////////////////////////
 
-module lab7_TestFixure;
+module Lab7_TestFixure;
 
 	// Inputs
 	reg Clock;
 
-	// Outputs
-	wire Zero;
-
 	// Instantiate the Unit Under Test (UUT)
 	PCIMID_RFALUDMRF_TopModule uut (
-		.Clock(Clock), 
-		.Zero(Zero)
+		.Clock(Clock)
 	);
 
 	initial begin
-	
-	
 		// Initialize Inputs
 		Clock = 0;
+
+		Clock = 0;
 		
-		#50;Clock = 1;
-		#50;Clock = 0;
-		#50;Clock = 1;
-		#50;Clock = 0;
-		#50;Clock = 1;
-		#50;Clock = 0;
-		#50;Clock = 1;
-		#50;Clock = 0;
-		#50;Clock = 1;
-		#50;Clock = 0;
-		#50;Clock = 1;
-		#50;Clock = 0;
-		#50;Clock = 1;
-		#50;Clock = 0;
-		#50;Clock = 1;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		#20;Clock = 0;
+		#20;Clock = 1;		
+		
 		$stop;
-		// Add stimulus here
 
 	end
       

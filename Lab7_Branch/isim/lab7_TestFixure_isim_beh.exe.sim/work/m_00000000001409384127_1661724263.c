@@ -390,6 +390,6 @@ LAB12:    t46 = *((unsigned int *)t30);
 extern void work_m_00000000001409384127_1661724263_init()
 {
 	static char *pe[] = {(void *)Initial_34_0,(void *)Cont_39_1,(void *)Cont_40_2,(void *)Always_42_3};
-	xsi_register_didat("work_m_00000000001409384127_1661724263", "isim/lab7_TestFixure_isim_beh.exe.sim/work/m_00000000001409384127_1661724263.didat");
+	xsi_register_didat("work_m_00000000001409384127_1661724263", "isim/Lab7_TestFixure_isim_beh.exe.sim/work/m_00000000001409384127_1661724263.didat");
 	xsi_register_executes(pe);
 }
