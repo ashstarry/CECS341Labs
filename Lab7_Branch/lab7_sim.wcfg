@@ -10,49 +10,652 @@
          </top_modules>
       </db_ref>
    </db_ref_list>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="18" />
    <wvobject fp_name="/Lab7_TestFixure/Clock" type="logic" db_ref_id="1">
       <obj_property name="ElementShortName">Clock</obj_property>
       <obj_property name="ObjectShortName">Clock</obj_property>
    </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/Zero" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">Zero</obj_property>
-      <obj_property name="ObjectShortName">Zero</obj_property>
+   <wvobject fp_name="/Lab7_TestFixure/uut/DM/Address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Address[63:0]</obj_property>
+      <obj_property name="ObjectShortName">Address[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">RF[0:31,63:0]</obj_property>
-      <obj_property name="ObjectShortName">RF[0:31,63:0]</obj_property>
+   <wvobject fp_name="/Lab7_TestFixure/uut/DM/MemRead" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemRead</obj_property>
+      <obj_property name="ObjectShortName">MemRead</obj_property>
    </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">DM[0:255,7:0]</obj_property>
-      <obj_property name="ObjectShortName">DM[0:255,7:0]</obj_property>
+   <wvobject fp_name="/Lab7_TestFixure/uut/DM/MemWrite" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
    </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/PCSrc_Mux/Pc_Add" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">Pc_Add[63:0]</obj_property>
-      <obj_property name="ObjectShortName">Pc_Add[63:0]</obj_property>
+   <wvobject fp_name="/Lab7_TestFixure/uut/DM/WriteData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WriteData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/PCSrc_Mux/ALu_Add" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">ALu_Add[63:0]</obj_property>
-      <obj_property name="ObjectShortName">ALu_Add[63:0]</obj_property>
+   <wvobject fp_name="/Lab7_TestFixure/uut/DM/ReadData" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadData[63:0]</obj_property>
+      <obj_property name="ObjectShortName">ReadData[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/PCSrc_Mux/PcSrc_Select" type="logic" db_ref_id="1">
-      <obj_property name="ElementShortName">PcSrc_Select</obj_property>
-      <obj_property name="ObjectShortName">PcSrc_Select</obj_property>
+   <wvobject fp_name="/Lab7_TestFixure/uut/DM/addr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/PCSrc_Mux/PcSrc_Out" type="array" db_ref_id="1">
-      <obj_property name="ElementShortName">PcSrc_Out[63:0]</obj_property>
-      <obj_property name="ObjectShortName">PcSrc_Out[63:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/AdderPCout/in" type="array" db_ref_id="1">
+   <wvobject fp_name="vbus341" type="vbus" db_ref_id="1">
+      <obj_property name="label">DM[7:0]</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">in[63:0]</obj_property>
-      <obj_property name="ObjectShortName">in[63:0]</obj_property>
-      <obj_property name="label">Adder pc in[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[0,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[1,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[2,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[3,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[4,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[5,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[6,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/Lab7_TestFixure/uut/AdderPCout/out" type="array" db_ref_id="1">
+   <wvobject fp_name="vbus349" type="vbus" db_ref_id="1">
+      <obj_property name="label">DM[40:47]_Loading 40</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="ElementShortName">out[63:0]</obj_property>
-      <obj_property name="ObjectShortName">out[63:0]</obj_property>
-      <obj_property name="label">Adder pc out[63:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[40]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[40,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[40,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[41]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[41,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[41,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[42]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[42,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[42,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[43]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[43,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[43,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[44]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[44,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[44,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[45]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[45,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[45,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[46]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[46,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[46,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[47]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[47,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[47,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus358" type="vbus" db_ref_id="1">
+      <obj_property name="label">DM[80:87]_Loading 80</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[80]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[80,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[80,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[81]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[81,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[81,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[82]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[82,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[82,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[83]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[83,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[83,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[84]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[84,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[84,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[85]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[85,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[85,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[86]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[86,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[86,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[87]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[87,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[87,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus385" type="vbus" db_ref_id="1">
+      <obj_property name="label">DM[48:55]_Storing R1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[48]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[48,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[48,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[49]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[49,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[49,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[50]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[50,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[50,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[51]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[51,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[51,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[52]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[52,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[52,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[53]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[53,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[53,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[54]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[54,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[54,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[55]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[55,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[55,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus394" type="vbus" db_ref_id="1">
+      <obj_property name="label">DM[56:63]_Storing R2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[56]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[56,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[56,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[57]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[57,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[57,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[58]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[58,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[58,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[59]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[59,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[59,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[60]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[60,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[60,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[61]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[61,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[61,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[62]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[62,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[62,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[63]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[63,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[63,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus403" type="vbus" db_ref_id="1">
+      <obj_property name="label">DM[64:71]_Storing  R3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[64]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[64,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[64,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[65]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[65,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[65,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[66]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[66,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[66,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[67]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[67,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[67,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[68]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[68,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[68,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[69]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[69,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[69,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[70]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[70,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[70,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[71]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[71,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[71,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus412" type="vbus" db_ref_id="1">
+      <obj_property name="label">DM[72:79]_Storing R4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[72]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[72,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[72,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[73]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[73,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[73,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[74]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[74,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[74,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[75]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[75,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[75,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[76]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[76,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[76,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[77]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[77,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[77,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[78]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[78,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[78,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/DM/DM[79]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[79,7:0]</obj_property>
+         <obj_property name="ObjectShortName">DM[79,7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus584" type="vbus" db_ref_id="1">
+      <obj_property name="label">RF Loaded R10 value</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,63:0]</obj_property>
+         <obj_property name="ObjectShortName">RF[10,63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus518" type="vbus" db_ref_id="1">
+      <obj_property name="label">RF Loaded R5 value</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,63:0]</obj_property>
+         <obj_property name="ObjectShortName">RF[5,63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,63]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,63]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,63]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,62]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,62]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,62]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,61]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,61]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,61]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,60]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,60]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,60]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,59]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,59]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,59]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,58]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,58]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,58]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,57]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,57]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,57]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,56]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,56]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,56]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,55]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,55]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,55]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,54]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,54]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,54]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,53]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,53]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,53]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,52]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,52]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,52]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,51]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,51]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,51]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,50]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,50]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,50]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,49]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,49]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,49]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,48]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,48]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,48]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,47]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,47]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,47]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,46]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,46]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,46]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,45]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,45]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,45]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,44]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,44]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,44]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,43]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,43]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,43]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,42]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,42]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,42]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,41]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,41]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,41]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,40]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,40]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,40]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,39]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,39]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,39]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,38]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,38]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,38]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,37]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,37]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,37]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,36]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,36]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,36]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,35]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,35]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,35]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,34]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,34]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,34]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,33]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,33]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,33]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,32]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,32]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,32]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,31]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,31]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,31]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,30]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,30]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,30]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,29]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,29]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,29]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,28]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,28]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,28]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,27]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,27]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,27]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,26]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,26]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,26]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,25]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,25]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,25]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,24]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,24]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,24]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,23]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,23]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,23]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,22]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,22]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,22]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,21]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,21]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,21]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,20]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,20]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,20]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,19]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,19]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,19]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,18]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,18]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,18]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,17]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,17]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,17]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,16]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,16]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,16]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,15]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,15]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,15]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,14]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,14]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,14]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,13]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,13]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,13]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,12]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,12]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,12]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,11]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,11]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,11]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,10]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,10]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,10]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,9]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,9]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,9]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,8]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,8]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,8]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,7]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,7]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,6]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,6]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,6]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,5]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,5]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,5]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,4]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,4]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,3]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,3]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,2]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,2]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,1]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,1]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[5,0]" type="logic" db_ref_id="1">
+            <obj_property name="ElementShortName">[5,0]</obj_property>
+            <obj_property name="ObjectShortName">RF[5,0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="vbus586" type="vbus" db_ref_id="1">
+      <obj_property name="label">RF registers 1 to 4 store values</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,63:0]</obj_property>
+         <obj_property name="ObjectShortName">RF[1,63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,63:0]</obj_property>
+         <obj_property name="ObjectShortName">RF[2,63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,63:0]</obj_property>
+         <obj_property name="ObjectShortName">RF[3,63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Lab7_TestFixure/uut/Lab3a/RF[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,63:0]</obj_property>
+         <obj_property name="ObjectShortName">RF[4,63:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/Lab7_TestFixure/uut/ALUoperation" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ALUoperation[3:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUoperation[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
 </wave_config>

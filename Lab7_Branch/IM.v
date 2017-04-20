@@ -24,28 +24,28 @@ module IM(Pc, InstrOut);
 
 	 
 	 //load1
-	 IM[0] = 8'b11111000;//Load2 beginning  from address 40
-	 IM[1] = 8'b010_00010;
-	 IM[2] = 8'b1000_00_00;
-	 IM[3] = 8'b000_00101;// register 5 value//load1 ending 
+	 IM[0]  = 8'b11111000;//Load2 beginning  from address 40
+	 IM[1]  = 8'b010_00010;
+	 IM[2]  = 8'b1000_00_00;
+	 IM[3]  = 8'b000_00101;// register 5 value//load1 ending 
 	 
 	 //load2
-	 IM[4] = 8'b11111000;//load3 beginning from address 80
-	 IM[5] = 8'b010_00101;
-	 IM[6] = 8'b0000_00_00;
-	 IM[7] = 8'b000_01010;//register 10 value//load1 ending 
+	 IM[4]  = 8'b11111000;//load3 beginning from address 80
+	 IM[5]  = 8'b010_00101;
+	 IM[6]  = 8'b0000_00_00;
+	 IM[7]  = 8'b000_01010;//register 10 value//load1 ending 
 	 
 
 	 
 	 //AluOp1
 	  //and to r3
-	 IM[8]  = 8'b10001010;	
-	 IM[9]  = 8'b000_01010;	//and reg5 with reg10to reg 1
+	 IM[8]   = 8'b10001010;	
+	 IM[9]   = 8'b000_01010;	//and reg5 with reg10to reg 1
 	 IM[10]  = 8'b000000_00;  // x3,x5,x10
 	 IM[11]  = 8'b101_00001;
 	 	 
 	 //or to r4
-	 IM[12]  = 8'b10001010;	
+	 IM[12]  = 8'b10101010;	
 	 IM[13]  = 8'b000_01010;	//and reg5 with reg10to reg 1
 	 IM[14]  = 8'b000000_00;  // x3,x5,x10
 	 IM[15]  = 8'b101_00010;
@@ -59,7 +59,7 @@ module IM(Pc, InstrOut);
 	 
 	 
 	 //sub to r2
-	 IM[20]  = 8'b11101011;	
+	 IM[20]  = 8'b11001011;	
 	 IM[21]  = 8'b000_01010;	//subtract reg5 with reg10to reg 1
 	 IM[22]  = 8'b000000_00;  // x2,x5,x10
 	 IM[23]  = 8'b101_00100;

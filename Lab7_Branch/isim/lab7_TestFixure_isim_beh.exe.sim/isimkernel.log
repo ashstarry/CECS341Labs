@@ -2,9 +2,9 @@ Command line:
    Lab7_TestFixure_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  65260
+     -socket  50076
 
-Thu Apr 20 13:32:44 2017
+Thu Apr 20 16:16:55 2017
 
 
- Elaboration Time: 0.109375 sec
+ Elaboration Time: 0.140625 sec
