@@ -1,0 +1,58 @@
+ISim log file
+Running: C:\Users\jvarg\Documents\CECS341Labs\Lab_8\PCIMID_RFALUDMRF_TopModule_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+----------------------------------------------------------------------
+INFO:Security:61 - The XILINXD_LICENSE_FILE environment variable is not set.
+INFO:Security:63 - The LM_LICENSE_FILE environment variable is not set.
+INFO:Security:68 - For more information or for assistance in obtaining 
+ a license, please run the Xilinx License Configuration Manager
+       (xlcm or "Manage Xilinx Licenses".)
+INFO:Security:68a - user is jvarg, on host DESKTOP-EGRKM1D.
+ERROR:Security:14 - No feature was available for 'ISIM'.
+
+No such feature exists.
+Feature:       ISIM
+License path:  C:/.Xilinx\Xilinx.lic;C:\Xilinx\14.7\ISE_DS\ISE\/coregen/core_licenses\Xilinx.lic;C:\Xilinx\14.7\ISE_DS\ISE\/coregen/core_licenses\XilinxFree.lic;C:\Xilinx\14.7\ISE_DS\EDK/data/core_licenses\Xilinx.lic;
+FLEXnet Licensing error:-5,357
+For further information, refer to the FLEXnet Licensing documentation,
+available at "www.flexerasoftware.com".
+----------------------------------------------------------------------
+WARNING: A full ISim License cannot be checked out due to the issues listed above. Please use Xilinx License Configuration Manager to fix these issues in order to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 39.  For instance PCIMID_RFALUDMRF_TopModule/IF_ID/, width 32 of formal port instr_Out is not equal to width 64 of actual signal PCout1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 92.  For instance PCIMID_RFALUDMRF_TopModule/ID/, width 2 of formal port ALUOp is not equal to width 1 of actual signal ALUO0.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 15.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port ALUOp_In is not equal to width 2 of actual signal ALUOp0.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 39.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port pcOut_In is not equal to width 64 of actual signal PCout1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 37.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port readData1_In is not equal to width 64 of actual signal A0.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 38.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port readData2_In is not equal to width 64 of actual signal B0.
+WARNING: For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port opcode_In is not equal to width 11 of actual.
+WARNING: For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port writeReg_In is not equal to width 5 of actual.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 43.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port signExt_In is not equal to width 64 of actual signal SEout0.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 15.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port ALUOp_Out is not equal to width 2 of actual signal ALUOp1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 39.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port pcOut_Out is not equal to width 64 of actual signal PCout2.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 37.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port readData1_Out is not equal to width 64 of actual signal A1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 38.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port readData2_Out is not equal to width 64 of actual signal B1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 43.  For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port signExt_Out is not equal to width 64 of actual signal SEout1.
+WARNING: For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port opcode_Out is not equal to width 11 of actual.
+WARNING: For instance PCIMID_RFALUDMRF_TopModule/ID_EX/, width 1 of formal port writeReg_Out is not equal to width 5 of actual.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 40.  For instance PCIMID_RFALUDMRF_TopModule/EX_MEM/, width 1 of formal port branchAdder_Result_In is not equal to width 64 of actual signal BranchAdder_Result0.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 35.  For instance PCIMID_RFALUDMRF_TopModule/EX_MEM/, width 1 of formal port aluResult_In is not equal to width 64 of actual signal ALUresult0.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 38.  For instance PCIMID_RFALUDMRF_TopModule/EX_MEM/, width 1 of formal port readData2_In is not equal to width 64 of actual signal B1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 44.  For instance PCIMID_RFALUDMRF_TopModule/EX_MEM/, width 1 of formal port writeReg_In is not equal to width 32 of actual signal InstrOut2.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 40.  For instance PCIMID_RFALUDMRF_TopModule/EX_MEM/, width 1 of formal port branchAdder_Result_Out is not equal to width 64 of actual signal BranchAdder_Result1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 35.  For instance PCIMID_RFALUDMRF_TopModule/EX_MEM/, width 1 of formal port aluResult_Out is not equal to width 64 of actual signal ALUresult1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 38.  For instance PCIMID_RFALUDMRF_TopModule/EX_MEM/, width 1 of formal port readData2_Out is not equal to width 64 of actual signal B2.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 44.  For instance PCIMID_RFALUDMRF_TopModule/EX_MEM/, width 1 of formal port writeReg_Out is not equal to width 32 of actual signal InstrOut3.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 42.  For instance PCIMID_RFALUDMRF_TopModule/MEM_WB/, width 1 of formal port readDataMem_In is not equal to width 64 of actual signal ReadData0.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 35.  For instance PCIMID_RFALUDMRF_TopModule/MEM_WB/, width 1 of formal port aluResult_In is not equal to width 64 of actual signal ALUresult1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 44.  For instance PCIMID_RFALUDMRF_TopModule/MEM_WB/, width 1 of formal port instruOut2_In is not equal to width 32 of actual signal InstrOut3.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 42.  For instance PCIMID_RFALUDMRF_TopModule/MEM_WB/, width 1 of formal port readDataMem_Out is not equal to width 64 of actual signal ReadData1.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 35.  For instance PCIMID_RFALUDMRF_TopModule/MEM_WB/, width 1 of formal port aluResult_Out is not equal to width 64 of actual signal ALUresult2.
+WARNING: File "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 44.  For instance PCIMID_RFALUDMRF_TopModule/MEM_WB/, width 1 of formal port instruOut2_Out is not equal to width 32 of actual signal InstrOut4.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.

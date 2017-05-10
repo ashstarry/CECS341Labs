@@ -1,0 +1,91 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule_isim_beh.exe -prj C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule_beh.prj work.PCIMID_RFALUDMRF_TopModule work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/LEGv8.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/ALUControl.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/Shift_L2.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/SE.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/registerfile.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/Reg2Loc.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCSrc_Mux.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PC.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/MEM_WB.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/MemtoReg.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/IM.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/IF_ID.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/ID_EX.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/ID.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/gate1.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/EX_MEM.v" into library work
+WARNING:HDLCompiler:370 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/EX_MEM.v" Line 42: Empty port in module declaration
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/DataMemory.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/ALUwithControl.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/ALUSrc.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/AdderSE.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/AdderPCout.v" into library work
+Analyzing Verilog file "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 66: Port pcOut_Out is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 68: Size mismatch in connection of port <instr_Out>. Formal port size is 32-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 92: Size mismatch in connection of port <ALUOp>. Formal port size is 2-bit while actual signal size is 1-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 115: Size mismatch in connection of port <ALUOp_In>. Formal port size is 1-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 117: Size mismatch in connection of port <pcOut_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 118: Size mismatch in connection of port <readData1_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 119: Size mismatch in connection of port <readData2_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 120: Size mismatch in connection of port <opcode_In>. Formal port size is 1-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 121: Size mismatch in connection of port <writeReg_In>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 122: Size mismatch in connection of port <signExt_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 129: Size mismatch in connection of port <ALUOp_Out>. Formal port size is 1-bit while actual signal size is 2-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 131: Size mismatch in connection of port <pcOut_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 132: Size mismatch in connection of port <readData1_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 133: Size mismatch in connection of port <readData2_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 134: Size mismatch in connection of port <signExt_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 135: Size mismatch in connection of port <opcode_Out>. Formal port size is 1-bit while actual signal size is 11-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 136: Size mismatch in connection of port <writeReg_Out>. Formal port size is 1-bit while actual signal size is 5-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 169: Size mismatch in connection of port <branchAdder_Result_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 171: Size mismatch in connection of port <aluResult_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 172: Size mismatch in connection of port <readData2_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 173: Size mismatch in connection of port <writeReg_In>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 180: Size mismatch in connection of port <branchAdder_Result_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 182: Size mismatch in connection of port <aluResult_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 183: Size mismatch in connection of port <readData2_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 184: Size mismatch in connection of port <writeReg_Out>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 207: Size mismatch in connection of port <readDataMem_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 208: Size mismatch in connection of port <aluResult_In>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 209: Size mismatch in connection of port <instruOut2_In>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 214: Size mismatch in connection of port <readDataMem_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 215: Size mismatch in connection of port <aluResult_Out>. Formal port size is 1-bit while actual signal size is 64-bit.
+WARNING:HDLCompiler:189 - "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule.v" Line 216: Size mismatch in connection of port <instruOut2_Out>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Compiling module AdderPCout
+Compiling module PC
+Compiling module IM
+Compiling module IF_ID
+Compiling module PCSrc_Mux
+Compiling module Reg2Loc
+Compiling module ID
+Compiling module registerfile
+Compiling module SE
+Compiling module ID_EX
+Compiling module ALUControl
+Compiling module LEGv8
+Compiling module ALUwithControl
+Compiling module ALUSrc
+Compiling module Shift_L2
+Compiling module Adder_Branch
+Compiling module EX_MEM
+Compiling module DataMemory
+Compiling module gate1
+Compiling module MEM_WB
+Compiling module MemtoReg
+Compiling module PCIMID_RFALUDMRF_TopModule
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 16 sub-compilation(s) to finish...
+Compiled 23 Verilog Units
+Built simulation executable C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule_isim_beh.exe
+Fuse Memory Usage: 29124 KB
+Fuse CPU Usage: 483 ms

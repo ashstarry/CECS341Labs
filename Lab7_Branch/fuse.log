@@ -49,5 +49,5 @@ Time Resolution for simulation is 1ps.
 Waiting for 13 sub-compilation(s) to finish...
 Compiled 20 Verilog Units
 Built simulation executable C:/Users/jvarg/Documents/CECS341Labs/Lab7_Branch/Lab7_TestFixure_isim_beh.exe
-Fuse Memory Usage: 28972 KB
-Fuse CPU Usage: 1280 ms
+Fuse Memory Usage: 29008 KB
+Fuse CPU Usage: 1171 ms

@@ -42,7 +42,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492729902" xil_pn:in_ck="4662492246230877342" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1492729902">
+    <transform xil_pn:end_ts="1493142653" xil_pn:in_ck="4662492246230877342" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1493142653">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALUControl.v"/>
@@ -77,7 +77,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1492729902" xil_pn:in_ck="4662492246230877342" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1492729902">
+    <transform xil_pn:end_ts="1493142653" xil_pn:in_ck="4662492246230877342" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1493142653">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALUControl.v"/>
@@ -100,9 +100,12 @@
       <outfile xil_pn:name="gate1.v"/>
       <outfile xil_pn:name="registerfile.v"/>
     </transform>
-    <transform xil_pn:end_ts="1492729909" xil_pn:in_ck="4662492246230877342" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2376694284708897409" xil_pn:start_ts="1492729902">
+    <transform xil_pn:end_ts="1493145266" xil_pn:in_ck="4662492246230877342" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2376694284708897409" xil_pn:start_ts="1493145258">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Lab7_TestFixure_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
@@ -110,9 +113,13 @@
       <outfile xil_pn:name="lab7_TestFixure_beh.prj"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1492729910" xil_pn:in_ck="9164849297040552775" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6572887951941059490" xil_pn:start_ts="1492729909">
+    <transform xil_pn:end_ts="1493145266" xil_pn:in_ck="9164849297040552775" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="6572887951941059490" xil_pn:start_ts="1493145266">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Lab7_TestFixure_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>

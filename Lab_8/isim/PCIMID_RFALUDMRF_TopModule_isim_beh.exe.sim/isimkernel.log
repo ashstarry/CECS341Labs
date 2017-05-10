@@ -1,0 +1,29 @@
+Command line:
+   PCIMID_RFALUDMRF_TopModule_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58934
+
+Tue May 09 23:29:25 2017
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 388.309 Meg
+
+ Total Signals          : 182
+ Total Nets             : 1748
+ Total Signal Drivers   : 30
+ Total Blocks           : 23
+ Total Primitive Blocks : 21
+ Total Processes        : 53
+ Total Traceable Variables  : 45
+ Total Scalar Nets and Variables : 8743
+Total Line Count : 209
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 388.309 Meg
+
+Tue May 09 23:29:31 2017
+

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule_isim_beh.exe" -prj "C:/Users/jvarg/Documents/CECS341Labs/Lab_8/PCIMID_RFALUDMRF_TopModule_beh.prj" "work.PCIMID_RFALUDMRF_TopModule" "work.glbl" 
